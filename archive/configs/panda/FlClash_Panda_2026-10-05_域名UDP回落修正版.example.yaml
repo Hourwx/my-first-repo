@@ -1,0 +1,672 @@
+# REDACTED STRUCTURAL TEMPLATE — not a usable subscription.
+# Historical validation does not establish current reachability.
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+unified-delay: true
+tcp-concurrent: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver-policy:
+    +.google.com: https://dns.cloudflare.com/dns-query
+    +.googleapis.com: https://dns.cloudflare.com/dns-query
+    +.googleapis.cn: https://dns.cloudflare.com/dns-query
+    +.googlevideo.com: https://dns.cloudflare.com/dns-query
+    +.gstatic.com: https://dns.cloudflare.com/dns-query
+    +.youtube.com: https://dns.cloudflare.com/dns-query
+    +.youtu.be: https://dns.cloudflare.com/dns-query
+    +.facebook.com: https://dns.cloudflare.com/dns-query
+    +.twitter.com: https://dns.cloudflare.com/dns-query
+    +.x.com: https://dns.cloudflare.com/dns-query
+    +.github.com: https://dns.cloudflare.com/dns-query
+    +.githubusercontent.com: https://dns.cloudflare.com/dns-query
+    +.openai.com: https://dns.cloudflare.com/dns-query
+    +.chatgpt.com: https://dns.cloudflare.com/dns-query
+    +.anthropic.com: https://dns.cloudflare.com/dns-query
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  - tls://dot.pub:853
+  - tls://dns.alidns.com:853
+  fallback:
+  - https://dns.cloudflare.com/dns-query
+  - https://dns.google/dns-query
+  - tls://1.1.1.1:853
+  - tls://8.8.8.8:853
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+    - +.githubusercontent.com
+    - +.googlevideo.com
+    - +.googleapis.cn
+  fake-ip-filter:
+  - '*.lan'
+  - '*.local'
+  - '*.localhost'
+  - '*.test'
+  - localhost.ptlogin2.qq.com
+  - +.stun.*.*
+  - +.stun.*.*.*
+  - +.stun.*.*.*.*
+  - lens.l.google.com
+  - '*.srv.nintendo.net'
+  - +.stun.playstation.net
+  - xbox.*.*.microsoft.com
+  - '*.*.xboxlive.com'
+  - +.msftncsi.com
+  - +.msftconnecttest.com
+proxies:
+- name: 剩余流量：181.19 GB
+  type: anytls
+  server: 2001:db8::1
+  port: 63293
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 距离下次重置剩余：14 天
+  type: anytls
+  server: 2001:db8::1
+  port: 63293
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 套餐到期：2026-10-19
+  type: anytls
+  server: 2001:db8::1
+  port: 63293
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: HK-1-V6
+  type: anytls
+  server: 2001:db8::1
+  port: 63293
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: HK-1-中转
+  type: anytls
+  server: 192.0.2.23
+  port: 57341
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: HK-2
+  type: anytls
+  server: 192.0.2.19
+  port: 54514
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: HK-2-中转
+  type: anytls
+  server: 192.0.2.23
+  port: 43432
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: TW-1
+  type: anytls
+  server: 192.0.2.34
+  port: 54672
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: TW-1-中转
+  type: anytls
+  server: 192.0.2.23
+  port: 45412
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: JP-01-hy2
+  server: 192.0.2.21
+  port: 55164
+  sni: proxy-tls.example.invalid
+  up: null
+  down: null
+  skip-cert-verify: true
+  ports: 47000-57000
+  type: hysteria2
+  password: REDACTED_PASSWORD
+  obfs: salamander
+  obfs-password: REDACTED_OBFS_PASSWORD
+- name: JP-01-0.9X-SoftBank
+  type: anytls
+  server: 192.0.2.21
+  port: 37411
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: JP-02-0.95X-SoftBank
+  type: anytls
+  server: 192.0.2.22
+  port: 35412
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: JP-4-SoftBank
+  type: anytls
+  server: 192.0.2.23
+  port: 44293
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: US-07-GIA
+  type: anytls
+  server: 192.0.2.4
+  port: 43584
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: US-7-GIA
+  type: vless
+  server: 192.0.2.4
+  port: 46721
+  uuid: 00000000-0000-4000-8000-000000000000
+  alterId: 0
+  cipher: auto
+  udp: true
+  flow: xtls-rprx-vision
+  encryption: none
+  tls: true
+  skip-cert-verify: false
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+  client-fingerprint: chrome
+  network: tcp
+- name: US-08
+  type: anytls
+  server: 192.0.2.5
+  port: 33547
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 洛杉矶住宅静态IP
+  type: socks5
+  server: 192.0.2.2
+  port: 443
+  username: REDACTED_USERNAME
+  password: REDACTED_PASSWORD
+  udp: false
+  dialer-proxy: US-07-GIA
+proxy-groups:
+- name: Panda Network
+  type: select
+  proxies:
+  - US-07-GIA
+  - 洛杉矶住宅静态IP
+  - 自动选择
+  - 故障转移
+  - DIRECT
+  - 剩余流量：181.19 GB
+  - 距离下次重置剩余：14 天
+  - 套餐到期：2026-10-19
+  - HK-1-V6
+  - HK-1-中转
+  - HK-2
+  - HK-2-中转
+  - TW-1
+  - TW-1-中转
+  - JP-01-hy2
+  - JP-01-0.9X-SoftBank
+  - JP-02-0.95X-SoftBank
+  - JP-4-SoftBank
+  - US-7-GIA
+  - US-08
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 剩余流量：181.19 GB
+  - 距离下次重置剩余：14 天
+  - 套餐到期：2026-10-19
+  - HK-1-V6
+  - HK-1-中转
+  - HK-2
+  - HK-2-中转
+  - TW-1
+  - TW-1-中转
+  - JP-01-hy2
+  - JP-01-0.9X-SoftBank
+  - JP-02-0.95X-SoftBank
+  - JP-4-SoftBank
+  - US-07-GIA
+  - US-7-GIA
+  - US-08
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 故障转移
+  type: fallback
+  proxies:
+  - 剩余流量：181.19 GB
+  - 距离下次重置剩余：14 天
+  - 套餐到期：2026-10-19
+  - HK-1-V6
+  - HK-1-中转
+  - HK-2
+  - HK-2-中转
+  - TW-1
+  - TW-1-中转
+  - JP-01-hy2
+  - JP-01-0.9X-SoftBank
+  - JP-02-0.95X-SoftBank
+  - JP-4-SoftBank
+  - US-07-GIA
+  - US-7-GIA
+  - US-08
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- DOMAIN,localhost,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- DOMAIN-SUFFIX,lan,DIRECT
+- DOMAIN-SUFFIX,home.arpa,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+- IP-CIDR6,::1/128,DIRECT,no-resolve
+- IP-CIDR6,fc00::/7,DIRECT,no-resolve
+- IP-CIDR6,fe80::/10,DIRECT,no-resolve
+- DOMAIN-SUFFIX,douyinvod.com,DIRECT
+- DOMAIN-SUFFIX,douyinpic.com,DIRECT
+- DOMAIN-SUFFIX,douyincdn.com,DIRECT
+- DOMAIN-SUFFIX,douyinstatic.com,DIRECT
+- DOMAIN-SUFFIX,byteeffecttos.com,DIRECT
+- DOMAIN-SUFFIX,byteeffectcharges.com,DIRECT
+- DOMAIN-SUFFIX,volccdn.com,DIRECT
+- DOMAIN-SUFFIX,volcvideo.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,tiktokcdn.com,US-07-GIA
+- DOMAIN-SUFFIX,tiktokcdn-us.com,US-07-GIA
+- DOMAIN-SUFFIX,tiktokcdn-eu.com,US-07-GIA
+- DOMAIN-SUFFIX,ttwstatic.com,US-07-GIA
+- DOMAIN-SUFFIX,byteoversea.com,US-07-GIA
+- DOMAIN-SUFFIX,ibytedtos.com,US-07-GIA
+- DOMAIN-SUFFIX,ibyteimg.com,US-07-GIA
+- DOMAIN,v16m-default.akamaized.net,US-07-GIA
+- DOMAIN-SUFFIX,douyin.com,Panda Network
+- AND,((DOMAIN-SUFFIX,douyin.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,amemv.com,Panda Network
+- AND,((DOMAIN-SUFFIX,amemv.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,iesdouyin.com,Panda Network
+- AND,((DOMAIN-SUFFIX,iesdouyin.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,zijieapi.com,Panda Network
+- AND,((DOMAIN-SUFFIX,zijieapi.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,snssdk.com,Panda Network
+- AND,((DOMAIN-SUFFIX,snssdk.com),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,douyin.exe,Panda Network
+- AND,((PROCESS-NAME,douyin.exe),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,douyin_guard.exe,Panda Network
+- AND,((PROCESS-NAME,douyin_guard.exe),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,douyin_tray.exe,Panda Network
+- AND,((PROCESS-NAME,douyin_tray.exe),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,douyin_widget.exe,Panda Network
+- AND,((PROCESS-NAME,douyin_widget.exe),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktok.com,Panda Network
+- AND,((DOMAIN-SUFFIX,tiktok.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktokv.com,Panda Network
+- AND,((DOMAIN-SUFFIX,tiktokv.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktokapis.com,Panda Network
+- AND,((DOMAIN-SUFFIX,tiktokapis.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktokd.org,Panda Network
+- AND,((DOMAIN-SUFFIX,tiktokd.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,musical.ly,Panda Network
+- AND,((DOMAIN-SUFFIX,musical.ly),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,openai.com,Panda Network
+- AND,((DOMAIN-SUFFIX,openai.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,chatgpt.com,Panda Network
+- AND,((DOMAIN-SUFFIX,chatgpt.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,oaistatic.com,Panda Network
+- AND,((DOMAIN-SUFFIX,oaistatic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,oaiusercontent.com,Panda Network
+- AND,((DOMAIN-SUFFIX,oaiusercontent.com),(NETWORK,UDP)),REJECT
+- DOMAIN,chat.openai.auth0.com,Panda Network
+- AND,((DOMAIN,chat.openai.auth0.com),(NETWORK,UDP)),REJECT
+- DOMAIN,cdn.auth0.com,Panda Network
+- AND,((DOMAIN,cdn.auth0.com),(NETWORK,UDP)),REJECT
+- DOMAIN,challenges.cloudflare.com,Panda Network
+- AND,((DOMAIN,challenges.cloudflare.com),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,codex.exe,Panda Network
+- AND,((PROCESS-NAME,codex.exe),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,ChatGPT.exe,Panda Network
+- AND,((PROCESS-NAME,ChatGPT.exe),(NETWORK,UDP)),REJECT
+- DOMAIN,www.cloudflare.com,Panda Network
+- AND,((DOMAIN,www.cloudflare.com),(NETWORK,UDP)),REJECT
+- DOMAIN,get.geojs.io,Panda Network
+- AND,((DOMAIN,get.geojs.io),(NETWORK,UDP)),REJECT
+- DOMAIN,api.country.is,Panda Network
+- AND,((DOMAIN,api.country.is),(NETWORK,UDP)),REJECT
+- DOMAIN,api.ipquery.io,Panda Network
+- AND,((DOMAIN,api.ipquery.io),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ipwho.is,Panda Network
+- AND,((DOMAIN-SUFFIX,ipwho.is),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,myip.com,Panda Network
+- AND,((DOMAIN-SUFFIX,myip.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ipapi.co,Panda Network
+- AND,((DOMAIN-SUFFIX,ipapi.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ident.me,Panda Network
+- AND,((DOMAIN-SUFFIX,ident.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ip-api.com,Panda Network
+- AND,((DOMAIN-SUFFIX,ip-api.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ip.sb,Panda Network
+- AND,((DOMAIN-SUFFIX,ip.sb),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ipinfo.io,Panda Network
+- AND,((DOMAIN-SUFFIX,ipinfo.io),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,notion.so,Panda Network
+- AND,((DOMAIN-SUFFIX,notion.so),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,notion.com,Panda Network
+- AND,((DOMAIN-SUFFIX,notion.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,notion.site,Panda Network
+- AND,((DOMAIN-SUFFIX,notion.site),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,notion-static.com,Panda Network
+- AND,((DOMAIN-SUFFIX,notion-static.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,t.me,Panda Network
+- AND,((DOMAIN-SUFFIX,t.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,telegram.me,Panda Network
+- AND,((DOMAIN-SUFFIX,telegram.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,telesco.pe,Panda Network
+- AND,((DOMAIN-SUFFIX,telesco.pe),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,telegram-cdn.org,Panda Network
+- AND,((DOMAIN-SUFFIX,telegram-cdn.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cdn-telegram.org,Panda Network
+- AND,((DOMAIN-SUFFIX,cdn-telegram.org),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,TikTok.exe,Panda Network
+- AND,((PROCESS-NAME,TikTok.exe),(NETWORK,UDP)),REJECT
+- DOMAIN,services.googleapis.cn,Panda Network
+- AND,((DOMAIN,services.googleapis.cn),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,googleapis.cn,Panda Network
+- AND,((DOMAIN-SUFFIX,googleapis.cn),(NETWORK,UDP)),REJECT
+- DOMAIN,xn--ngstr-lra8j.com,Panda Network
+- AND,((DOMAIN,xn--ngstr-lra8j.com),(NETWORK,UDP)),REJECT
+- DOMAIN,clientservices.googleapis.com,Panda Network
+- AND,((DOMAIN,clientservices.googleapis.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gvt1.com,Panda Network
+- AND,((DOMAIN-SUFFIX,gvt1.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gvt2.com,Panda Network
+- AND,((DOMAIN-SUFFIX,gvt2.com),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-SUFFIX,local,DIRECT
+- DOMAIN-SUFFIX,localhost,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+- IP-CIDR6,::1/128,DIRECT,no-resolve
+- IP-CIDR6,fc00::/7,DIRECT,no-resolve
+- IP-CIDR6,fe80::/10,DIRECT,no-resolve
+- DOMAIN-SUFFIX,apps.apple.com,Panda Network
+- AND,((DOMAIN-SUFFIX,apps.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,itunes.apple.com,Panda Network
+- AND,((DOMAIN-SUFFIX,itunes.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,blobstore.apple.com,Panda Network
+- AND,((DOMAIN-SUFFIX,blobstore.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-KEYWORD,alibaba,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-KEYWORD,tencent,DIRECT
+- DOMAIN-KEYWORD,bilibili,DIRECT
+- DOMAIN-KEYWORD,weibo,DIRECT
+- DOMAIN-KEYWORD,douyin,DIRECT
+- DOMAIN-KEYWORD,bytedance,DIRECT
+- DOMAIN-KEYWORD,xiaomi,DIRECT
+- DOMAIN-KEYWORD,huawei,DIRECT
+- DOMAIN-KEYWORD,netease,DIRECT
+- DOMAIN-KEYWORD,meituan,DIRECT
+- DOMAIN-KEYWORD,pinduoduo,DIRECT
+- DOMAIN-KEYWORD,kuaishou,DIRECT
+- DOMAIN-KEYWORD,jingdong,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,weixin.com,DIRECT
+- DOMAIN-SUFFIX,wechat.com,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,myqcloud.com,DIRECT
+- DOMAIN-SUFFIX,qpic.cn,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,hdslb.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,yeah.net,DIRECT
+- DOMAIN-SUFFIX,sina.com,DIRECT
+- DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,gitee.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,cnblogs.com,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-SUFFIX,windows.com,DIRECT
+- DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+- DOMAIN-SUFFIX,live.com,DIRECT
+- DOMAIN-SUFFIX,msn.com,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- DOMAIN-KEYWORD,google,Panda Network
+- AND,((DOMAIN-KEYWORD,google),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,gmail,Panda Network
+- AND,((DOMAIN-KEYWORD,gmail),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,youtube,Panda Network
+- AND,((DOMAIN-KEYWORD,youtube),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,facebook,Panda Network
+- AND,((DOMAIN-KEYWORD,facebook),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,twitter,Panda Network
+- AND,((DOMAIN-KEYWORD,twitter),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,instagram,Panda Network
+- AND,((DOMAIN-KEYWORD,instagram),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,whatsapp,Panda Network
+- AND,((DOMAIN-KEYWORD,whatsapp),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,telegram,Panda Network
+- AND,((DOMAIN-KEYWORD,telegram),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,github,Panda Network
+- AND,((DOMAIN-KEYWORD,github),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,blogspot,Panda Network
+- AND,((DOMAIN-KEYWORD,blogspot),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,dropbox,Panda Network
+- AND,((DOMAIN-KEYWORD,dropbox),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,wikipedia,Panda Network
+- AND,((DOMAIN-KEYWORD,wikipedia),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,pinterest,Panda Network
+- AND,((DOMAIN-KEYWORD,pinterest),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,discord,Panda Network
+- AND,((DOMAIN-KEYWORD,discord),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,openai,Panda Network
+- AND,((DOMAIN-KEYWORD,openai),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,anthropic,Panda Network
+- AND,((DOMAIN-KEYWORD,anthropic),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,netflix,Panda Network
+- AND,((DOMAIN-KEYWORD,netflix),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,spotify,Panda Network
+- AND,((DOMAIN-KEYWORD,spotify),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,amazon,Panda Network
+- AND,((DOMAIN-KEYWORD,amazon),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,t.co,Panda Network
+- AND,((DOMAIN-SUFFIX,t.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,x.com,Panda Network
+- AND,((DOMAIN-SUFFIX,x.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,twimg.com,Panda Network
+- AND,((DOMAIN-SUFFIX,twimg.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fb.me,Panda Network
+- AND,((DOMAIN-SUFFIX,fb.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fbcdn.net,Panda Network
+- AND,((DOMAIN-SUFFIX,fbcdn.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,youtu.be,Panda Network
+- AND,((DOMAIN-SUFFIX,youtu.be),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ytimg.com,Panda Network
+- AND,((DOMAIN-SUFFIX,ytimg.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gstatic.com,Panda Network
+- AND,((DOMAIN-SUFFIX,gstatic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ggpht.com,Panda Network
+- AND,((DOMAIN-SUFFIX,ggpht.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,googlevideo.com,Panda Network
+- AND,((DOMAIN-SUFFIX,googlevideo.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,v2ex.com,Panda Network
+- AND,((DOMAIN-SUFFIX,v2ex.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,medium.com,Panda Network
+- AND,((DOMAIN-SUFFIX,medium.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,reddit.com,Panda Network
+- AND,((DOMAIN-SUFFIX,reddit.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,redd.it,Panda Network
+- AND,((DOMAIN-SUFFIX,redd.it),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,imgur.com,Panda Network
+- AND,((DOMAIN-SUFFIX,imgur.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,pixiv.net,Panda Network
+- AND,((DOMAIN-SUFFIX,pixiv.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,nytimes.com,Panda Network
+- AND,((DOMAIN-SUFFIX,nytimes.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,nyt.com,Panda Network
+- AND,((DOMAIN-SUFFIX,nyt.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bbc.com,Panda Network
+- AND,((DOMAIN-SUFFIX,bbc.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bbc.co.uk,Panda Network
+- AND,((DOMAIN-SUFFIX,bbc.co.uk),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,steamcommunity.com,Panda Network
+- AND,((DOMAIN-SUFFIX,steamcommunity.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,twitch.tv,Panda Network
+- AND,((DOMAIN-SUFFIX,twitch.tv),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,vimeo.com,Panda Network
+- AND,((DOMAIN-SUFFIX,vimeo.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tumblr.com,Panda Network
+- AND,((DOMAIN-SUFFIX,tumblr.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,linkedin.com,Panda Network
+- AND,((DOMAIN-SUFFIX,linkedin.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,licdn.com,Panda Network
+- AND,((DOMAIN-SUFFIX,licdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,mega.nz,Panda Network
+- AND,((DOMAIN-SUFFIX,mega.nz),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,archive.org,Panda Network
+- AND,((DOMAIN-SUFFIX,archive.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wikimedia.org,Panda Network
+- AND,((DOMAIN-SUFFIX,wikimedia.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,soundcloud.com,Panda Network
+- AND,((DOMAIN-SUFFIX,soundcloud.com),(NETWORK,UDP)),REJECT
+- IP-CIDR,91.108.4.0/22,Panda Network,no-resolve
+- IP-CIDR,91.108.8.0/21,Panda Network,no-resolve
+- IP-CIDR,91.108.12.0/22,Panda Network,no-resolve
+- IP-CIDR,91.108.16.0/22,Panda Network,no-resolve
+- IP-CIDR,91.108.56.0/22,Panda Network,no-resolve
+- IP-CIDR,149.154.160.0/20,Panda Network,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,Panda Network,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,Panda Network,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,Panda Network,no-resolve
+- GEOIP,CN,DIRECT
+- MATCH,DIRECT
+find-process-mode: always

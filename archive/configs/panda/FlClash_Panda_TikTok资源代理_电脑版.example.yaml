@@ -1,0 +1,568 @@
+# REDACTED STRUCTURAL TEMPLATE — not a usable subscription.
+# Historical validation does not establish current reachability.
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+unified-delay: true
+tcp-concurrent: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver-policy:
+    +.google.com: https://dns.cloudflare.com/dns-query
+    +.googleapis.com: https://dns.cloudflare.com/dns-query
+    +.googleapis.cn: https://dns.cloudflare.com/dns-query
+    +.googlevideo.com: https://dns.cloudflare.com/dns-query
+    +.gstatic.com: https://dns.cloudflare.com/dns-query
+    +.youtube.com: https://dns.cloudflare.com/dns-query
+    +.youtu.be: https://dns.cloudflare.com/dns-query
+    +.facebook.com: https://dns.cloudflare.com/dns-query
+    +.twitter.com: https://dns.cloudflare.com/dns-query
+    +.x.com: https://dns.cloudflare.com/dns-query
+    +.github.com: https://dns.cloudflare.com/dns-query
+    +.githubusercontent.com: https://dns.cloudflare.com/dns-query
+    +.openai.com: https://dns.cloudflare.com/dns-query
+    +.chatgpt.com: https://dns.cloudflare.com/dns-query
+    +.anthropic.com: https://dns.cloudflare.com/dns-query
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  - tls://dot.pub:853
+  - tls://dns.alidns.com:853
+  fallback:
+  - https://dns.cloudflare.com/dns-query
+  - https://dns.google/dns-query
+  - tls://1.1.1.1:853
+  - tls://8.8.8.8:853
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+    - +.githubusercontent.com
+    - +.googlevideo.com
+    - +.googleapis.cn
+  fake-ip-filter:
+  - '*.lan'
+  - '*.local'
+  - '*.localhost'
+  - '*.test'
+  - localhost.ptlogin2.qq.com
+  - +.stun.*.*
+  - +.stun.*.*.*
+  - +.stun.*.*.*.*
+  - lens.l.google.com
+  - '*.srv.nintendo.net'
+  - +.stun.playstation.net
+  - xbox.*.*.microsoft.com
+  - '*.*.xboxlive.com'
+  - +.msftncsi.com
+  - +.msftconnecttest.com
+proxies:
+- name: 剩余流量：190.33 GB
+  type: anytls
+  server: 192.0.2.23
+  port: 57341
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 距离下次重置剩余：15 天
+  type: anytls
+  server: 192.0.2.23
+  port: 57341
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 套餐到期：2026-10-19
+  type: anytls
+  server: 192.0.2.23
+  port: 57341
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: HK-1-中转
+  type: anytls
+  server: 192.0.2.23
+  port: 57341
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: HK-1-V6
+  type: anytls
+  server: 2001:db8::1
+  port: 63293
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: HK-2
+  type: anytls
+  server: 192.0.2.19
+  port: 54514
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: HK-2-中转
+  type: anytls
+  server: 192.0.2.23
+  port: 43432
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: TW-1
+  type: anytls
+  server: 192.0.2.34
+  port: 54672
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: TW-1-中转
+  type: anytls
+  server: 192.0.2.23
+  port: 45412
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: JP-01-SoftBank
+  type: vless
+  server: 192.0.2.21
+  port: 46721
+  uuid: 00000000-0000-4000-8000-000000000000
+  alterId: 0
+  cipher: auto
+  udp: true
+  flow: xtls-rprx-vision
+  encryption: none
+  tls: true
+  skip-cert-verify: false
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+  client-fingerprint: chrome
+  network: tcp
+- name: JP-01-0.9X-SoftBank
+  type: anytls
+  server: 192.0.2.21
+  port: 37411
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: JP-02-SoftBank
+  type: vless
+  server: 192.0.2.22
+  port: 48766
+  uuid: 00000000-0000-4000-8000-000000000000
+  alterId: 0
+  cipher: auto
+  udp: true
+  flow: xtls-rprx-vision
+  encryption: none
+  tls: true
+  skip-cert-verify: false
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+  client-fingerprint: chrome
+  network: tcp
+- name: JP-02-0.95X-SoftBank
+  type: anytls
+  server: 192.0.2.22
+  port: 35412
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: JP-4-SoftBank
+  type: anytls
+  server: 192.0.2.23
+  port: 44293
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: US-07-GIA
+  type: anytls
+  server: 192.0.2.4
+  port: 43584
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: US-08
+  type: anytls
+  server: 192.0.2.5
+  port: 33547
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 洛杉矶住宅静态IP
+  type: socks5
+  server: 192.0.2.2
+  port: 443
+  username: REDACTED_USERNAME
+  password: REDACTED_PASSWORD
+  udp: false
+  dialer-proxy: US-07-GIA
+proxy-groups:
+- name: Panda Network
+  type: select
+  proxies:
+  - 自动选择
+  - 故障转移
+  - DIRECT
+  - 剩余流量：190.33 GB
+  - 距离下次重置剩余：15 天
+  - 套餐到期：2026-10-19
+  - HK-1-中转
+  - HK-1-V6
+  - HK-2
+  - HK-2-中转
+  - TW-1
+  - TW-1-中转
+  - JP-01-SoftBank
+  - JP-01-0.9X-SoftBank
+  - JP-02-SoftBank
+  - JP-02-0.95X-SoftBank
+  - JP-4-SoftBank
+  - US-07-GIA
+  - US-08
+  - 洛杉矶住宅静态IP
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 剩余流量：190.33 GB
+  - 距离下次重置剩余：15 天
+  - 套餐到期：2026-10-19
+  - HK-1-中转
+  - HK-1-V6
+  - HK-2
+  - HK-2-中转
+  - TW-1
+  - TW-1-中转
+  - JP-01-SoftBank
+  - JP-01-0.9X-SoftBank
+  - JP-02-SoftBank
+  - JP-02-0.95X-SoftBank
+  - JP-4-SoftBank
+  - US-07-GIA
+  - US-08
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 故障转移
+  type: fallback
+  proxies:
+  - 剩余流量：190.33 GB
+  - 距离下次重置剩余：15 天
+  - 套餐到期：2026-10-19
+  - HK-1-中转
+  - HK-1-V6
+  - HK-2
+  - HK-2-中转
+  - TW-1
+  - TW-1-中转
+  - JP-01-SoftBank
+  - JP-01-0.9X-SoftBank
+  - JP-02-SoftBank
+  - JP-02-0.95X-SoftBank
+  - JP-4-SoftBank
+  - US-07-GIA
+  - US-08
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- DOMAIN,localhost,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- DOMAIN-SUFFIX,lan,DIRECT
+- DOMAIN-SUFFIX,home.arpa,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+- IP-CIDR6,::1/128,DIRECT,no-resolve
+- IP-CIDR6,fc00::/7,DIRECT,no-resolve
+- IP-CIDR6,fe80::/10,DIRECT,no-resolve
+- DOMAIN-SUFFIX,douyinvod.com,DIRECT
+- DOMAIN-SUFFIX,douyinpic.com,DIRECT
+- DOMAIN-SUFFIX,douyincdn.com,DIRECT
+- DOMAIN-SUFFIX,douyinstatic.com,DIRECT
+- DOMAIN-SUFFIX,byteeffecttos.com,DIRECT
+- DOMAIN-SUFFIX,byteeffectcharges.com,DIRECT
+- DOMAIN-SUFFIX,volccdn.com,DIRECT
+- DOMAIN-SUFFIX,volcvideo.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,tiktokcdn.com,US-07-GIA
+- DOMAIN-SUFFIX,tiktokcdn-us.com,US-07-GIA
+- DOMAIN-SUFFIX,tiktokcdn-eu.com,US-07-GIA
+- DOMAIN-SUFFIX,ttwstatic.com,US-07-GIA
+- DOMAIN-SUFFIX,byteoversea.com,US-07-GIA
+- DOMAIN-SUFFIX,ibytedtos.com,US-07-GIA
+- DOMAIN-SUFFIX,ibyteimg.com,US-07-GIA
+- DOMAIN,v16m-default.akamaized.net,US-07-GIA
+- DOMAIN-SUFFIX,douyin.com,Panda Network
+- DOMAIN-SUFFIX,amemv.com,Panda Network
+- DOMAIN-SUFFIX,iesdouyin.com,Panda Network
+- DOMAIN-SUFFIX,zijieapi.com,Panda Network
+- DOMAIN-SUFFIX,snssdk.com,Panda Network
+- DOMAIN-SUFFIX,tiktok.com,Panda Network
+- DOMAIN-SUFFIX,tiktokv.com,Panda Network
+- DOMAIN-SUFFIX,tiktokapis.com,Panda Network
+- DOMAIN-SUFFIX,tiktokd.org,Panda Network
+- DOMAIN-SUFFIX,musical.ly,Panda Network
+- DOMAIN-SUFFIX,openai.com,Panda Network
+- DOMAIN-SUFFIX,chatgpt.com,Panda Network
+- DOMAIN-SUFFIX,oaistatic.com,Panda Network
+- DOMAIN-SUFFIX,oaiusercontent.com,Panda Network
+- DOMAIN,chat.openai.auth0.com,Panda Network
+- DOMAIN,cdn.auth0.com,Panda Network
+- DOMAIN,challenges.cloudflare.com,Panda Network
+- PROCESS-NAME,codex.exe,Panda Network
+- PROCESS-NAME,ChatGPT.exe,Panda Network
+- DOMAIN-SUFFIX,ipwho.is,Panda Network
+- DOMAIN-SUFFIX,myip.com,Panda Network
+- DOMAIN-SUFFIX,ipapi.co,Panda Network
+- DOMAIN-SUFFIX,ident.me,Panda Network
+- DOMAIN-SUFFIX,ip-api.com,Panda Network
+- DOMAIN-SUFFIX,ip.sb,Panda Network
+- DOMAIN-SUFFIX,ipinfo.io,Panda Network
+- DOMAIN-SUFFIX,notion.so,Panda Network
+- DOMAIN-SUFFIX,notion.com,Panda Network
+- DOMAIN-SUFFIX,notion.site,Panda Network
+- DOMAIN-SUFFIX,notion-static.com,Panda Network
+- DOMAIN-SUFFIX,t.me,Panda Network
+- DOMAIN-SUFFIX,telegram.me,Panda Network
+- DOMAIN-SUFFIX,telesco.pe,Panda Network
+- DOMAIN-SUFFIX,telegram-cdn.org,Panda Network
+- DOMAIN-SUFFIX,cdn-telegram.org,Panda Network
+- DOMAIN,services.googleapis.cn,Panda Network
+- DOMAIN-SUFFIX,googleapis.cn,Panda Network
+- DOMAIN,xn--ngstr-lra8j.com,Panda Network
+- DOMAIN,clientservices.googleapis.com,Panda Network
+- DOMAIN-SUFFIX,gvt1.com,Panda Network
+- DOMAIN-SUFFIX,gvt2.com,Panda Network
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-SUFFIX,local,DIRECT
+- DOMAIN-SUFFIX,localhost,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+- IP-CIDR6,::1/128,DIRECT,no-resolve
+- IP-CIDR6,fc00::/7,DIRECT,no-resolve
+- IP-CIDR6,fe80::/10,DIRECT,no-resolve
+- DOMAIN-SUFFIX,apps.apple.com,Panda Network
+- DOMAIN-SUFFIX,itunes.apple.com,Panda Network
+- DOMAIN-SUFFIX,blobstore.apple.com,Panda Network
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-KEYWORD,alibaba,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-KEYWORD,tencent,DIRECT
+- DOMAIN-KEYWORD,bilibili,DIRECT
+- DOMAIN-KEYWORD,weibo,DIRECT
+- DOMAIN-KEYWORD,douyin,DIRECT
+- DOMAIN-KEYWORD,bytedance,DIRECT
+- DOMAIN-KEYWORD,xiaomi,DIRECT
+- DOMAIN-KEYWORD,huawei,DIRECT
+- DOMAIN-KEYWORD,netease,DIRECT
+- DOMAIN-KEYWORD,meituan,DIRECT
+- DOMAIN-KEYWORD,pinduoduo,DIRECT
+- DOMAIN-KEYWORD,kuaishou,DIRECT
+- DOMAIN-KEYWORD,jingdong,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,weixin.com,DIRECT
+- DOMAIN-SUFFIX,wechat.com,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,myqcloud.com,DIRECT
+- DOMAIN-SUFFIX,qpic.cn,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,hdslb.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,yeah.net,DIRECT
+- DOMAIN-SUFFIX,sina.com,DIRECT
+- DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,gitee.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,cnblogs.com,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-SUFFIX,windows.com,DIRECT
+- DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+- DOMAIN-SUFFIX,live.com,DIRECT
+- DOMAIN-SUFFIX,msn.com,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- DOMAIN-KEYWORD,google,Panda Network
+- DOMAIN-KEYWORD,gmail,Panda Network
+- DOMAIN-KEYWORD,youtube,Panda Network
+- DOMAIN-KEYWORD,facebook,Panda Network
+- DOMAIN-KEYWORD,twitter,Panda Network
+- DOMAIN-KEYWORD,instagram,Panda Network
+- DOMAIN-KEYWORD,whatsapp,Panda Network
+- DOMAIN-KEYWORD,telegram,Panda Network
+- DOMAIN-KEYWORD,github,Panda Network
+- DOMAIN-KEYWORD,blogspot,Panda Network
+- DOMAIN-KEYWORD,dropbox,Panda Network
+- DOMAIN-KEYWORD,wikipedia,Panda Network
+- DOMAIN-KEYWORD,pinterest,Panda Network
+- DOMAIN-KEYWORD,discord,Panda Network
+- DOMAIN-KEYWORD,openai,Panda Network
+- DOMAIN-KEYWORD,anthropic,Panda Network
+- DOMAIN-KEYWORD,netflix,Panda Network
+- DOMAIN-KEYWORD,spotify,Panda Network
+- DOMAIN-KEYWORD,amazon,Panda Network
+- DOMAIN-SUFFIX,t.co,Panda Network
+- DOMAIN-SUFFIX,x.com,Panda Network
+- DOMAIN-SUFFIX,twimg.com,Panda Network
+- DOMAIN-SUFFIX,fb.me,Panda Network
+- DOMAIN-SUFFIX,fbcdn.net,Panda Network
+- DOMAIN-SUFFIX,youtu.be,Panda Network
+- DOMAIN-SUFFIX,ytimg.com,Panda Network
+- DOMAIN-SUFFIX,gstatic.com,Panda Network
+- DOMAIN-SUFFIX,ggpht.com,Panda Network
+- DOMAIN-SUFFIX,googlevideo.com,Panda Network
+- DOMAIN-SUFFIX,v2ex.com,Panda Network
+- DOMAIN-SUFFIX,medium.com,Panda Network
+- DOMAIN-SUFFIX,reddit.com,Panda Network
+- DOMAIN-SUFFIX,redd.it,Panda Network
+- DOMAIN-SUFFIX,imgur.com,Panda Network
+- DOMAIN-SUFFIX,pixiv.net,Panda Network
+- DOMAIN-SUFFIX,nytimes.com,Panda Network
+- DOMAIN-SUFFIX,nyt.com,Panda Network
+- DOMAIN-SUFFIX,bbc.com,Panda Network
+- DOMAIN-SUFFIX,bbc.co.uk,Panda Network
+- DOMAIN-SUFFIX,steamcommunity.com,Panda Network
+- DOMAIN-SUFFIX,twitch.tv,Panda Network
+- DOMAIN-SUFFIX,vimeo.com,Panda Network
+- DOMAIN-SUFFIX,tumblr.com,Panda Network
+- DOMAIN-SUFFIX,linkedin.com,Panda Network
+- DOMAIN-SUFFIX,licdn.com,Panda Network
+- DOMAIN-SUFFIX,mega.nz,Panda Network
+- DOMAIN-SUFFIX,archive.org,Panda Network
+- DOMAIN-SUFFIX,wikimedia.org,Panda Network
+- DOMAIN-SUFFIX,soundcloud.com,Panda Network
+- IP-CIDR,91.108.4.0/22,Panda Network,no-resolve
+- IP-CIDR,91.108.8.0/21,Panda Network,no-resolve
+- IP-CIDR,91.108.12.0/22,Panda Network,no-resolve
+- IP-CIDR,91.108.16.0/22,Panda Network,no-resolve
+- IP-CIDR,91.108.56.0/22,Panda Network,no-resolve
+- IP-CIDR,149.154.160.0/20,Panda Network,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,Panda Network,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,Panda Network,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,Panda Network,no-resolve
+- GEOIP,CN,DIRECT
+- PROCESS-NAME,Douyin.exe,Panda Network
+- PROCESS-NAME,TikTok.exe,Panda Network
+- MATCH,DIRECT
