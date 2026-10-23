@@ -1,0 +1,903 @@
+# REDACTED STRUCTURAL TEMPLATE — not a usable subscription.
+# Historical validation does not establish current reachability.
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  respect-rules: true
+  proxy-server-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  fallback:
+  - 1.1.1.1
+  - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+    - gfw
+    ipcidr:
+    - 240.0.0.0/4
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+  fake-ip-filter:
+  - +.douyincdn.com
+  - +.douyinpic.com
+  - +.douyinstatic.com
+  - +.douyinvod.com
+  - +.byteeffecttos.com
+  - +.byteeffectcharges.com
+  - +.volccdn.com
+  - +.volcvideo.com
+  - +.pstatp.com
+  - +.tiktokcdn.com
+  - +.tiktokcdn-us.com
+  - +.tiktokcdn-eu.com
+  - +.ttwstatic.com
+  - +.byteoversea.com
+  - +.ibytedtos.com
+  - +.ibyteimg.com
+proxies:
+- name: 剩余流量：14.63 GB
+  type: vless
+  server: 192.0.2.37
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 距离下次重置剩余：30 天
+  type: vless
+  server: 192.0.2.37
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 套餐到期：2026-11-02
+  type: vless
+  server: 192.0.2.37
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 建议：感到卡顿请切换到专线节点
+  type: vless
+  server: 192.0.2.37
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 放丢失官网:https://love.p6m6.com
+  type: vless
+  server: 192.0.2.37
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 放丢失官网2:https://love3.p6m6.com
+  type: vless
+  server: 192.0.2.37
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 🇭🇰【亚洲】香港01丨直连
+  server: 192.0.2.3
+  port: 20000
+  ports: 20000-50000
+  mport: 20000-50000
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇭🇰【亚洲】香港02丨直连
+  server: 192.0.2.3
+  port: 20000
+  ports: 20000-50000
+  mport: 20000-50000
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇭🇰【亚洲】香港03丨直连
+  server: 192.0.2.20
+  port: 8443
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇭🇰【亚洲】香港04丨直连
+  server: 192.0.2.20
+  port: 8443
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇭🇰【亚洲】香港05原生丨移动直连
+  type: vless
+  server: 192.0.2.1
+  port: 50133
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 🇸🇬【亚洲】新加坡01丨直连
+  server: 192.0.2.32
+  port: 20000
+  ports: 20000-50000
+  mport: 20000-50000
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇸🇬【亚洲】新加坡02丨直连
+  server: 192.0.2.32
+  port: 20000
+  ports: 20000-50000
+  mport: 20000-50000
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇸🇬【亚洲】新加坡03丨直连
+  server: 192.0.2.33
+  port: 20000
+  ports: 20000-50000
+  mport: 20000-50000
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇸🇬【亚洲】新加坡04丨直连
+  server: 192.0.2.33
+  port: 20000
+  ports: 20000-50000
+  mport: 20000-50000
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇸🇬 【亚洲】新加坡01丨Vless
+  type: vless
+  server: 192.0.2.40
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 🇸🇬 【亚洲】新加坡02丨Vless
+  type: vless
+  server: 192.0.2.41
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+- name: 🇯🇵【亚洲】日本01丨Vless
+  type: vless
+  server: 192.0.2.37
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 🇯🇵【亚洲】日本02丨Vless
+  type: vless
+  server: 192.0.2.38
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 🇯🇵【亚洲】日本03丨Vless
+  type: vless
+  server: 192.0.2.39
+  port: 50131
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: proxy-tls.example.invalid
+- name: 🇺🇸【北美洲】美国01原生丨直连【2x】
+  server: 192.0.2.35
+  port: 20000
+  ports: 20000-50000
+  mport: 20000-50000
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇺🇸【北美洲】美国02原生丨直连【2x】
+  server: 192.0.2.35
+  port: 20000
+  ports: 20000-50000
+  mport: 20000-50000
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇺🇸【北美洲】美国03原生丨直连【2x】
+  server: 192.0.2.36
+  port: 443
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇺🇸【北美洲】美国04原生丨直连【2x】
+  server: 192.0.2.36
+  port: 443
+  udp: true
+  skip-cert-verify: true
+  sni: proxy-tls.example.invalid
+  type: hysteria2
+  password: REDACTED_PASSWORD
+- name: 🇭🇰【亚洲】香港01丨V6【1x】
+  type: trojan
+  server: 192.0.2.30
+  port: 54357
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 🇭🇰【亚洲】香港02丨V6【1x】
+  type: trojan
+  server: 192.0.2.31
+  port: 54357
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡07丨V6【1x】
+  type: trojan
+  server: 192.0.2.30
+  port: 54258
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 🇸🇬【亚洲】新加坡08丨V6【1x】
+  type: trojan
+  server: 192.0.2.31
+  port: 54258
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 🇯🇵【亚洲】日本01丨V6【1x】
+  type: trojan
+  server: 192.0.2.30
+  port: 54261
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 🇯🇵【亚洲】日本02丨V6【1x】
+  type: trojan
+  server: 192.0.2.31
+  port: 54261
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 🇺🇸【北美洲】美国01丨V6【1x】
+  type: trojan
+  server: 192.0.2.30
+  port: 54273
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 🇺🇸【北美洲】美国02丨V6【1x】
+  type: trojan
+  server: 192.0.2.31
+  port: 54273
+  password: REDACTED_PASSWORD
+  udp: true
+  sni: proxy-tls.example.invalid
+  skip-cert-verify: true
+- name: 洛杉矶住宅静态IP
+  type: socks5
+  server: 192.0.2.2
+  port: 443
+  username: REDACTED_USERNAME
+  password: REDACTED_PASSWORD
+  udp: false
+proxy-groups:
+- name: 宝可梦
+  type: select
+  proxies:
+  - 自动选择
+  - 故障转移
+  - 洛杉矶住宅静态IP
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+  url: http://www.gstatic.com/generate_204
+  interval: 86400
+- name: 故障转移
+  type: fallback
+  proxies:
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+  url: http://www.gstatic.com/generate_204
+  interval: 7200
+- name: AI服务
+  type: select
+  proxies:
+  - 宝可梦
+  - 自动选择
+  - 故障转移
+  - DIRECT
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 流媒体
+  type: select
+  proxies:
+  - 宝可梦
+  - 自动选择
+  - DIRECT
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 社交媒体
+  type: select
+  proxies:
+  - 宝可梦
+  - 自动选择
+  - DIRECT
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 微软服务
+  type: select
+  proxies:
+  - DIRECT
+  - 宝可梦
+  - 自动选择
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 苹果服务
+  type: select
+  proxies:
+  - DIRECT
+  - 宝可梦
+  - 自动选择
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 谷歌服务
+  type: select
+  proxies:
+  - 宝可梦
+  - 自动选择
+  - DIRECT
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 电报消息
+  type: select
+  proxies:
+  - 宝可梦
+  - 自动选择
+  - 故障转移
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 游戏平台
+  type: select
+  proxies:
+  - 宝可梦
+  - 自动选择
+  - DIRECT
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+- name: 广告拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+  - 剩余流量：14.63 GB
+  - 距离下次重置剩余：30 天
+  - 套餐到期：2026-11-02
+  - 建议：感到卡顿请切换到专线节点
+  - 放丢失官网:https://love.p6m6.com
+  - 放丢失官网2:https://love3.p6m6.com
+  - 🇭🇰【亚洲】香港01丨直连
+  - 🇭🇰【亚洲】香港02丨直连
+  - 🇭🇰【亚洲】香港03丨直连
+  - 🇭🇰【亚洲】香港04丨直连
+  - 🇭🇰【亚洲】香港05原生丨移动直连
+  - 🇸🇬【亚洲】新加坡01丨直连
+  - 🇸🇬【亚洲】新加坡02丨直连
+  - 🇸🇬【亚洲】新加坡03丨直连
+  - 🇸🇬【亚洲】新加坡04丨直连
+  - 🇸🇬 【亚洲】新加坡01丨Vless
+  - 🇸🇬 【亚洲】新加坡02丨Vless
+  - 🇯🇵【亚洲】日本01丨Vless
+  - 🇯🇵【亚洲】日本02丨Vless
+  - 🇯🇵【亚洲】日本03丨Vless
+  - 🇺🇸【北美洲】美国01原生丨直连【2x】
+  - 🇺🇸【北美洲】美国02原生丨直连【2x】
+  - 🇺🇸【北美洲】美国03原生丨直连【2x】
+  - 🇺🇸【北美洲】美国04原生丨直连【2x】
+  - 🇭🇰【亚洲】香港01丨V6【1x】
+  - 🇭🇰【亚洲】香港02丨V6【1x】
+  - 🇸🇬【亚洲】新加坡07丨V6【1x】
+  - 🇸🇬【亚洲】新加坡08丨V6【1x】
+  - 🇯🇵【亚洲】日本01丨V6【1x】
+  - 🇯🇵【亚洲】日本02丨V6【1x】
+  - 🇺🇸【北美洲】美国01丨V6【1x】
+  - 🇺🇸【北美洲】美国02丨V6【1x】
+rules:
+- DOMAIN,ipwho.is,宝可梦
+- DOMAIN,api.ip.sb,宝可梦
+- DOMAIN,ip.cfbox.eu.cc,宝可梦
+- DOMAIN-SUFFIX,ipinfo.io,宝可梦
+- DOMAIN-SUFFIX,ip.sb,宝可梦
+- DOMAIN,api.ipify.org,宝可梦
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- DOMAIN-SUFFIX,douyinvod.com,DIRECT
+- DOMAIN-SUFFIX,douyinpic.com,DIRECT
+- DOMAIN-SUFFIX,douyincdn.com,DIRECT
+- DOMAIN-SUFFIX,douyinstatic.com,DIRECT
+- DOMAIN-SUFFIX,byteeffecttos.com,DIRECT
+- DOMAIN-SUFFIX,byteeffectcharges.com,DIRECT
+- DOMAIN-SUFFIX,volccdn.com,DIRECT
+- DOMAIN-SUFFIX,volcvideo.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,douyin.com)),REJECT
+- DOMAIN-SUFFIX,douyin.com,宝可梦
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,amemv.com)),REJECT
+- DOMAIN-SUFFIX,amemv.com,宝可梦
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,iesdouyin.com)),REJECT
+- DOMAIN-SUFFIX,iesdouyin.com,宝可梦
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+- DOMAIN-SUFFIX,zijieapi.com,宝可梦
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,snssdk.com)),REJECT
+- DOMAIN-SUFFIX,snssdk.com,宝可梦
+- DOMAIN-SUFFIX,tiktokcdn.com,DIRECT
+- DOMAIN-SUFFIX,tiktokcdn-us.com,DIRECT
+- DOMAIN-SUFFIX,tiktokcdn-eu.com,DIRECT
+- DOMAIN-SUFFIX,ttwstatic.com,DIRECT
+- DOMAIN-SUFFIX,byteoversea.com,DIRECT
+- DOMAIN-SUFFIX,ibytedtos.com,DIRECT
+- DOMAIN-SUFFIX,ibyteimg.com,DIRECT
+- DOMAIN-SUFFIX,v16m-default.akamaized.net,DIRECT
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,tiktokv.com)),REJECT
+- DOMAIN-SUFFIX,tiktokv.com,宝可梦
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,musical.ly)),REJECT
+- DOMAIN-SUFFIX,musical.ly,宝可梦
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,tiktok.com)),REJECT
+- DOMAIN-SUFFIX,tiktok.com,宝可梦
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,tiktokapis.com)),REJECT
+- DOMAIN-SUFFIX,tiktokapis.com,宝可梦
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,tiktokd.org)),REJECT
+- DOMAIN-SUFFIX,tiktokd.org,宝可梦
+- PROCESS-NAME,Douyin.exe,宝可梦
+- PROCESS-NAME,douyin.exe,宝可梦
+- PROCESS-NAME,TikTok.exe,宝可梦
+- PROCESS-NAME,TikTok LIVE Studio.exe,宝可梦
+- MATCH,DIRECT
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443

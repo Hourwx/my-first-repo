@@ -1,0 +1,1103 @@
+# REDACTED STRUCTURAL TEMPLATE — not a usable subscription.
+# Historical validation does not establish current reachability.
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+unified-delay: true
+tcp-concurrent: true
+ipv6: true
+dns:
+  enable: true
+  ipv6: true
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  respect-rules: true
+  proxy-server-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  fallback:
+  - 1.1.1.1
+  - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+    - gfw
+    ipcidr:
+    - 240.0.0.0/4
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+proxies:
+- name: 剩余流量：402.72 GB
+  type: vless
+  server: 192.0.2.8
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 距离下次重置剩余：16 天
+  type: vless
+  server: 192.0.2.8
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 套餐到期：2026-10-20
+  type: vless
+  server: 192.0.2.8
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇯🇵日本•移联01
+  type: vless
+  server: 192.0.2.8
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇯🇵日本•移联02
+  type: vless
+  server: 192.0.2.13
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇸🇬新加坡•移联01
+  type: vless
+  server: 192.0.2.16
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇸🇬新加坡•移联02
+  type: vless
+  server: 192.0.2.17
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇭🇰香港•移联01
+  type: vless
+  server: 192.0.2.18
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇭🇰香港•移联02
+  type: vless
+  server: 192.0.2.9
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇨🇳台湾•移联01
+  type: vless
+  server: 192.0.2.10
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇰🇷韩国•移联01
+  type: vless
+  server: 192.0.2.11
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇺🇸美国•移联01
+  type: vless
+  server: 192.0.2.12
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇬🇧英国•移联01
+  type: vless
+  server: 192.0.2.14
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇩🇪德国•移联01
+  type: vless
+  server: 192.0.2.15
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇯🇵日本•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇯🇵日本•电信02
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇸🇬新加坡•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇸🇬新加坡•电信02
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇭🇰香港•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇭🇰香港•电信02
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇨🇳台湾•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇰🇷韩国•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇺🇸美国•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇬🇧英国•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇩🇪德国•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 洛杉矶住宅静态IP
+  type: socks5
+  server: 192.0.2.2
+  port: 443
+  username: REDACTED_USERNAME
+  password: REDACTED_PASSWORD
+  udp: false
+  dialer-proxy: 🇺🇸美国•电信01
+proxy-groups:
+- name: 吹雪云
+  type: select
+  proxies:
+  - 自动选择
+  - 故障转移
+  - 剩余流量：402.72 GB
+  - 距离下次重置剩余：16 天
+  - 套餐到期：2026-10-20
+  - 🇯🇵日本•移联01
+  - 🇯🇵日本•移联02
+  - 🇸🇬新加坡•移联01
+  - 🇸🇬新加坡•移联02
+  - 🇭🇰香港•移联01
+  - 🇭🇰香港•移联02
+  - 🇨🇳台湾•移联01
+  - 🇰🇷韩国•移联01
+  - 🇺🇸美国•移联01
+  - 🇬🇧英国•移联01
+  - 🇩🇪德国•移联01
+  - 🇯🇵日本•电信01
+  - 🇯🇵日本•电信02
+  - 🇸🇬新加坡•电信01
+  - 🇸🇬新加坡•电信02
+  - 🇭🇰香港•电信01
+  - 🇭🇰香港•电信02
+  - 🇨🇳台湾•电信01
+  - 🇰🇷韩国•电信01
+  - 🇺🇸美国•电信01
+  - 🇬🇧英国•电信01
+  - 🇩🇪德国•电信01
+  - 洛杉矶住宅静态IP
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 剩余流量：402.72 GB
+  - 距离下次重置剩余：16 天
+  - 套餐到期：2026-10-20
+  - 🇯🇵日本•移联01
+  - 🇯🇵日本•移联02
+  - 🇸🇬新加坡•移联01
+  - 🇸🇬新加坡•移联02
+  - 🇭🇰香港•移联01
+  - 🇭🇰香港•移联02
+  - 🇨🇳台湾•移联01
+  - 🇰🇷韩国•移联01
+  - 🇺🇸美国•移联01
+  - 🇬🇧英国•移联01
+  - 🇩🇪德国•移联01
+  - 🇯🇵日本•电信01
+  - 🇯🇵日本•电信02
+  - 🇸🇬新加坡•电信01
+  - 🇸🇬新加坡•电信02
+  - 🇭🇰香港•电信01
+  - 🇭🇰香港•电信02
+  - 🇨🇳台湾•电信01
+  - 🇰🇷韩国•电信01
+  - 🇺🇸美国•电信01
+  - 🇬🇧英国•电信01
+  - 🇩🇪德国•电信01
+  url: http://www.gstatic.com/generate_204
+  interval: 86400
+- name: 故障转移
+  type: fallback
+  proxies:
+  - 剩余流量：402.72 GB
+  - 距离下次重置剩余：16 天
+  - 套餐到期：2026-10-20
+  - 🇯🇵日本•移联01
+  - 🇯🇵日本•移联02
+  - 🇸🇬新加坡•移联01
+  - 🇸🇬新加坡•移联02
+  - 🇭🇰香港•移联01
+  - 🇭🇰香港•移联02
+  - 🇨🇳台湾•移联01
+  - 🇰🇷韩国•移联01
+  - 🇺🇸美国•移联01
+  - 🇬🇧英国•移联01
+  - 🇩🇪德国•移联01
+  - 🇯🇵日本•电信01
+  - 🇯🇵日本•电信02
+  - 🇸🇬新加坡•电信01
+  - 🇸🇬新加坡•电信02
+  - 🇭🇰香港•电信01
+  - 🇭🇰香港•电信02
+  - 🇨🇳台湾•电信01
+  - 🇰🇷韩国•电信01
+  - 🇺🇸美国•电信01
+  - 🇬🇧英国•电信01
+  - 🇩🇪德国•电信01
+  url: http://www.gstatic.com/generate_204
+  interval: 7200
+rules:
+- DOMAIN,localhost,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- DOMAIN-SUFFIX,lan,DIRECT
+- DOMAIN-SUFFIX,home.arpa,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+- IP-CIDR6,::1/128,DIRECT,no-resolve
+- IP-CIDR6,fc00::/7,DIRECT,no-resolve
+- IP-CIDR6,fe80::/10,DIRECT,no-resolve
+- DOMAIN-SUFFIX,douyinvod.com,DIRECT
+- DOMAIN-SUFFIX,douyinpic.com,DIRECT
+- DOMAIN-SUFFIX,douyincdn.com,DIRECT
+- DOMAIN-SUFFIX,douyinstatic.com,DIRECT
+- DOMAIN-SUFFIX,byteeffecttos.com,DIRECT
+- DOMAIN-SUFFIX,byteeffectcharges.com,DIRECT
+- DOMAIN-SUFFIX,volccdn.com,DIRECT
+- DOMAIN-SUFFIX,volcvideo.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,tiktokcdn.com,🇺🇸美国•移联01
+- DOMAIN-SUFFIX,tiktokcdn-us.com,🇺🇸美国•移联01
+- DOMAIN-SUFFIX,tiktokcdn-eu.com,🇺🇸美国•移联01
+- DOMAIN-SUFFIX,ttwstatic.com,🇺🇸美国•移联01
+- DOMAIN-SUFFIX,byteoversea.com,🇺🇸美国•移联01
+- DOMAIN-SUFFIX,ibytedtos.com,🇺🇸美国•移联01
+- DOMAIN-SUFFIX,ibyteimg.com,🇺🇸美国•移联01
+- DOMAIN,v16m-default.akamaized.net,🇺🇸美国•移联01
+- DOMAIN-SUFFIX,douyin.com,吹雪云
+- DOMAIN-SUFFIX,amemv.com,吹雪云
+- DOMAIN-SUFFIX,iesdouyin.com,吹雪云
+- DOMAIN-SUFFIX,zijieapi.com,吹雪云
+- DOMAIN-SUFFIX,snssdk.com,吹雪云
+- DOMAIN-SUFFIX,tiktok.com,吹雪云
+- DOMAIN-SUFFIX,tiktokv.com,吹雪云
+- DOMAIN-SUFFIX,tiktokapis.com,吹雪云
+- DOMAIN-SUFFIX,tiktokd.org,吹雪云
+- DOMAIN-SUFFIX,musical.ly,吹雪云
+- DOMAIN-SUFFIX,openai.com,吹雪云
+- DOMAIN-SUFFIX,chatgpt.com,吹雪云
+- DOMAIN-SUFFIX,oaistatic.com,吹雪云
+- DOMAIN-SUFFIX,oaiusercontent.com,吹雪云
+- DOMAIN,chat.openai.auth0.com,吹雪云
+- DOMAIN,cdn.auth0.com,吹雪云
+- DOMAIN,challenges.cloudflare.com,吹雪云
+- PROCESS-NAME,codex.exe,吹雪云
+- PROCESS-NAME,ChatGPT.exe,吹雪云
+- DOMAIN-SUFFIX,ipwho.is,吹雪云
+- DOMAIN-SUFFIX,myip.com,吹雪云
+- DOMAIN-SUFFIX,ipapi.co,吹雪云
+- DOMAIN-SUFFIX,ident.me,吹雪云
+- DOMAIN-SUFFIX,ip-api.com,吹雪云
+- DOMAIN-SUFFIX,ip.sb,吹雪云
+- DOMAIN-SUFFIX,ipinfo.io,吹雪云
+- DOMAIN-SUFFIX,notion.so,吹雪云
+- DOMAIN-SUFFIX,notion.com,吹雪云
+- DOMAIN-SUFFIX,notion.site,吹雪云
+- DOMAIN-SUFFIX,notion-static.com,吹雪云
+- DOMAIN-SUFFIX,t.me,吹雪云
+- DOMAIN-SUFFIX,telegram.me,吹雪云
+- DOMAIN-SUFFIX,telesco.pe,吹雪云
+- DOMAIN-SUFFIX,telegram-cdn.org,吹雪云
+- DOMAIN-SUFFIX,cdn-telegram.org,吹雪云
+- IP-CIDR,1.1.1.1/32,吹雪云,no-resolve
+- IP-CIDR,8.8.8.8/32,吹雪云,no-resolve
+- DOMAIN-SUFFIX,services.googleapis.cn,吹雪云
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,吹雪云
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,吹雪云
+- DOMAIN-SUFFIX,digicert.com,吹雪云
+- DOMAIN,ocsp.apple.com,吹雪云
+- DOMAIN,ocsp.comodoca.com,吹雪云
+- DOMAIN,ocsp.usertrust.com,吹雪云
+- DOMAIN,ocsp.sectigo.com,吹雪云
+- DOMAIN,ocsp.verisign.net,吹雪云
+- DOMAIN-SUFFIX,apple-dns.net,吹雪云
+- DOMAIN,testflight.apple.com,吹雪云
+- DOMAIN,sandbox.itunes.apple.com,吹雪云
+- DOMAIN,itunes.apple.com,吹雪云
+- DOMAIN-SUFFIX,apps.apple.com,吹雪云
+- DOMAIN-SUFFIX,blobstore.apple.com,吹雪云
+- DOMAIN,cvws.icloud-content.com,吹雪云
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN,cn.bing.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,吹雪云
+- DOMAIN-KEYWORD,google,吹雪云
+- DOMAIN-KEYWORD,gmail,吹雪云
+- DOMAIN-KEYWORD,youtube,吹雪云
+- DOMAIN-KEYWORD,facebook,吹雪云
+- DOMAIN-SUFFIX,fb.me,吹雪云
+- DOMAIN-SUFFIX,fbcdn.net,吹雪云
+- DOMAIN-KEYWORD,twitter,吹雪云
+- DOMAIN-KEYWORD,instagram,吹雪云
+- DOMAIN-KEYWORD,dropbox,吹雪云
+- DOMAIN-SUFFIX,twimg.com,吹雪云
+- DOMAIN-KEYWORD,blogspot,吹雪云
+- DOMAIN-SUFFIX,youtu.be,吹雪云
+- DOMAIN-KEYWORD,whatsapp,吹雪云
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,吹雪云
+- DOMAIN-SUFFIX,abpchina.org,吹雪云
+- DOMAIN-SUFFIX,adblockplus.org,吹雪云
+- DOMAIN-SUFFIX,adobe.com,吹雪云
+- DOMAIN-SUFFIX,akamaized.net,吹雪云
+- DOMAIN-SUFFIX,alfredapp.com,吹雪云
+- DOMAIN-SUFFIX,amplitude.com,吹雪云
+- DOMAIN-SUFFIX,ampproject.org,吹雪云
+- DOMAIN-SUFFIX,android.com,吹雪云
+- DOMAIN-SUFFIX,angularjs.org,吹雪云
+- DOMAIN-SUFFIX,aolcdn.com,吹雪云
+- DOMAIN-SUFFIX,apkpure.com,吹雪云
+- DOMAIN-SUFFIX,appledaily.com,吹雪云
+- DOMAIN-SUFFIX,appshopper.com,吹雪云
+- DOMAIN-SUFFIX,appspot.com,吹雪云
+- DOMAIN-SUFFIX,arcgis.com,吹雪云
+- DOMAIN-SUFFIX,archive.org,吹雪云
+- DOMAIN-SUFFIX,armorgames.com,吹雪云
+- DOMAIN-SUFFIX,aspnetcdn.com,吹雪云
+- DOMAIN-SUFFIX,att.com,吹雪云
+- DOMAIN-SUFFIX,awsstatic.com,吹雪云
+- DOMAIN-SUFFIX,azureedge.net,吹雪云
+- DOMAIN-SUFFIX,azurewebsites.net,吹雪云
+- DOMAIN-SUFFIX,bing.com,吹雪云
+- DOMAIN-SUFFIX,bintray.com,吹雪云
+- DOMAIN-SUFFIX,bit.com,吹雪云
+- DOMAIN-SUFFIX,bit.ly,吹雪云
+- DOMAIN-SUFFIX,bitbucket.org,吹雪云
+- DOMAIN-SUFFIX,bjango.com,吹雪云
+- DOMAIN-SUFFIX,bkrtx.com,吹雪云
+- DOMAIN-SUFFIX,blog.com,吹雪云
+- DOMAIN-SUFFIX,blogcdn.com,吹雪云
+- DOMAIN-SUFFIX,blogger.com,吹雪云
+- DOMAIN-SUFFIX,blogsmithmedia.com,吹雪云
+- DOMAIN-SUFFIX,blogspot.com,吹雪云
+- DOMAIN-SUFFIX,blogspot.hk,吹雪云
+- DOMAIN-SUFFIX,bloomberg.com,吹雪云
+- DOMAIN-SUFFIX,box.com,吹雪云
+- DOMAIN-SUFFIX,box.net,吹雪云
+- DOMAIN-SUFFIX,cachefly.net,吹雪云
+- DOMAIN-SUFFIX,chromium.org,吹雪云
+- DOMAIN-SUFFIX,cl.ly,吹雪云
+- DOMAIN-SUFFIX,cloudflare.com,吹雪云
+- DOMAIN-SUFFIX,cloudfront.net,吹雪云
+- DOMAIN-SUFFIX,cloudmagic.com,吹雪云
+- DOMAIN-SUFFIX,cmail19.com,吹雪云
+- DOMAIN-SUFFIX,cnet.com,吹雪云
+- DOMAIN-SUFFIX,cocoapods.org,吹雪云
+- DOMAIN-SUFFIX,comodoca.com,吹雪云
+- DOMAIN-SUFFIX,crashlytics.com,吹雪云
+- DOMAIN-SUFFIX,culturedcode.com,吹雪云
+- DOMAIN-SUFFIX,d.pr,吹雪云
+- DOMAIN-SUFFIX,danilo.to,吹雪云
+- DOMAIN-SUFFIX,dayone.me,吹雪云
+- DOMAIN-SUFFIX,db.tt,吹雪云
+- DOMAIN-SUFFIX,deskconnect.com,吹雪云
+- DOMAIN-SUFFIX,disq.us,吹雪云
+- DOMAIN-SUFFIX,disqus.com,吹雪云
+- DOMAIN-SUFFIX,disquscdn.com,吹雪云
+- DOMAIN-SUFFIX,dnsimple.com,吹雪云
+- DOMAIN-SUFFIX,docker.com,吹雪云
+- DOMAIN-SUFFIX,dribbble.com,吹雪云
+- DOMAIN-SUFFIX,droplr.com,吹雪云
+- DOMAIN-SUFFIX,duckduckgo.com,吹雪云
+- DOMAIN-SUFFIX,dueapp.com,吹雪云
+- DOMAIN-SUFFIX,dytt8.net,吹雪云
+- DOMAIN-SUFFIX,edgecastcdn.net,吹雪云
+- DOMAIN-SUFFIX,edgekey.net,吹雪云
+- DOMAIN-SUFFIX,edgesuite.net,吹雪云
+- DOMAIN-SUFFIX,engadget.com,吹雪云
+- DOMAIN-SUFFIX,entrust.net,吹雪云
+- DOMAIN-SUFFIX,eurekavpt.com,吹雪云
+- DOMAIN-SUFFIX,evernote.com,吹雪云
+- DOMAIN-SUFFIX,fabric.io,吹雪云
+- DOMAIN-SUFFIX,fast.com,吹雪云
+- DOMAIN-SUFFIX,fastly.net,吹雪云
+- DOMAIN-SUFFIX,fc2.com,吹雪云
+- DOMAIN-SUFFIX,feedburner.com,吹雪云
+- DOMAIN-SUFFIX,feedly.com,吹雪云
+- DOMAIN-SUFFIX,feedsportal.com,吹雪云
+- DOMAIN-SUFFIX,fiftythree.com,吹雪云
+- DOMAIN-SUFFIX,firebaseio.com,吹雪云
+- DOMAIN-SUFFIX,flexibits.com,吹雪云
+- DOMAIN-SUFFIX,flickr.com,吹雪云
+- DOMAIN-SUFFIX,flipboard.com,吹雪云
+- DOMAIN-SUFFIX,g.co,吹雪云
+- DOMAIN-SUFFIX,gabia.net,吹雪云
+- DOMAIN-SUFFIX,geni.us,吹雪云
+- DOMAIN-SUFFIX,gfx.ms,吹雪云
+- DOMAIN-SUFFIX,ggpht.com,吹雪云
+- DOMAIN-SUFFIX,ghostnoteapp.com,吹雪云
+- DOMAIN-SUFFIX,git.io,吹雪云
+- DOMAIN-KEYWORD,github,吹雪云
+- DOMAIN-SUFFIX,globalsign.com,吹雪云
+- DOMAIN-SUFFIX,gmodules.com,吹雪云
+- DOMAIN-SUFFIX,godaddy.com,吹雪云
+- DOMAIN-SUFFIX,golang.org,吹雪云
+- DOMAIN-SUFFIX,gongm.in,吹雪云
+- DOMAIN-SUFFIX,goo.gl,吹雪云
+- DOMAIN-SUFFIX,goodreaders.com,吹雪云
+- DOMAIN-SUFFIX,goodreads.com,吹雪云
+- DOMAIN-SUFFIX,gravatar.com,吹雪云
+- DOMAIN-SUFFIX,gstatic.com,吹雪云
+- DOMAIN-SUFFIX,gvt0.com,吹雪云
+- DOMAIN-SUFFIX,hockeyapp.net,吹雪云
+- DOMAIN-SUFFIX,hotmail.com,吹雪云
+- DOMAIN-SUFFIX,icons8.com,吹雪云
+- DOMAIN-SUFFIX,ifixit.com,吹雪云
+- DOMAIN-SUFFIX,ift.tt,吹雪云
+- DOMAIN-SUFFIX,ifttt.com,吹雪云
+- DOMAIN-SUFFIX,iherb.com,吹雪云
+- DOMAIN-SUFFIX,imageshack.us,吹雪云
+- DOMAIN-SUFFIX,img.ly,吹雪云
+- DOMAIN-SUFFIX,imgur.com,吹雪云
+- DOMAIN-SUFFIX,imore.com,吹雪云
+- DOMAIN-SUFFIX,instapaper.com,吹雪云
+- DOMAIN-SUFFIX,ipn.li,吹雪云
+- DOMAIN-SUFFIX,is.gd,吹雪云
+- DOMAIN-SUFFIX,issuu.com,吹雪云
+- DOMAIN-SUFFIX,itgonglun.com,吹雪云
+- DOMAIN-SUFFIX,itun.es,吹雪云
+- DOMAIN-SUFFIX,ixquick.com,吹雪云
+- DOMAIN-SUFFIX,j.mp,吹雪云
+- DOMAIN-SUFFIX,js.revsci.net,吹雪云
+- DOMAIN-SUFFIX,jshint.com,吹雪云
+- DOMAIN-SUFFIX,jtvnw.net,吹雪云
+- DOMAIN-SUFFIX,justgetflux.com,吹雪云
+- DOMAIN-SUFFIX,kat.cr,吹雪云
+- DOMAIN-SUFFIX,klip.me,吹雪云
+- DOMAIN-SUFFIX,libsyn.com,吹雪云
+- DOMAIN-SUFFIX,linkedin.com,吹雪云
+- DOMAIN-SUFFIX,line-apps.com,吹雪云
+- DOMAIN-SUFFIX,linode.com,吹雪云
+- DOMAIN-SUFFIX,lithium.com,吹雪云
+- DOMAIN-SUFFIX,littlehj.com,吹雪云
+- DOMAIN-SUFFIX,live.com,吹雪云
+- DOMAIN-SUFFIX,live.net,吹雪云
+- DOMAIN-SUFFIX,livefilestore.com,吹雪云
+- DOMAIN-SUFFIX,llnwd.net,吹雪云
+- DOMAIN-SUFFIX,macid.co,吹雪云
+- DOMAIN-SUFFIX,macromedia.com,吹雪云
+- DOMAIN-SUFFIX,macrumors.com,吹雪云
+- DOMAIN-SUFFIX,mashable.com,吹雪云
+- DOMAIN-SUFFIX,mathjax.org,吹雪云
+- DOMAIN-SUFFIX,medium.com,吹雪云
+- DOMAIN-SUFFIX,mega.co.nz,吹雪云
+- DOMAIN-SUFFIX,mega.nz,吹雪云
+- DOMAIN-SUFFIX,megaupload.com,吹雪云
+- DOMAIN-SUFFIX,microsofttranslator.com,吹雪云
+- DOMAIN-SUFFIX,mindnode.com,吹雪云
+- DOMAIN-SUFFIX,mobile01.com,吹雪云
+- DOMAIN-SUFFIX,modmyi.com,吹雪云
+- DOMAIN-SUFFIX,msedge.net,吹雪云
+- DOMAIN-SUFFIX,myfontastic.com,吹雪云
+- DOMAIN-SUFFIX,name.com,吹雪云
+- DOMAIN-SUFFIX,nextmedia.com,吹雪云
+- DOMAIN-SUFFIX,nsstatic.net,吹雪云
+- DOMAIN-SUFFIX,nssurge.com,吹雪云
+- DOMAIN-SUFFIX,nyt.com,吹雪云
+- DOMAIN-SUFFIX,nytimes.com,吹雪云
+- DOMAIN-SUFFIX,omnigroup.com,吹雪云
+- DOMAIN-SUFFIX,onedrive.com,吹雪云
+- DOMAIN-SUFFIX,onenote.com,吹雪云
+- DOMAIN-SUFFIX,ooyala.com,吹雪云
+- DOMAIN-SUFFIX,openvpn.net,吹雪云
+- DOMAIN-SUFFIX,openwrt.org,吹雪云
+- DOMAIN-SUFFIX,orkut.com,吹雪云
+- DOMAIN-SUFFIX,osxdaily.com,吹雪云
+- DOMAIN-SUFFIX,outlook.com,吹雪云
+- DOMAIN-SUFFIX,ow.ly,吹雪云
+- DOMAIN-SUFFIX,paddleapi.com,吹雪云
+- DOMAIN-SUFFIX,parallels.com,吹雪云
+- DOMAIN-SUFFIX,parse.com,吹雪云
+- DOMAIN-SUFFIX,pdfexpert.com,吹雪云
+- DOMAIN-SUFFIX,periscope.tv,吹雪云
+- DOMAIN-SUFFIX,pinboard.in,吹雪云
+- DOMAIN-SUFFIX,pinterest.com,吹雪云
+- DOMAIN-SUFFIX,pixelmator.com,吹雪云
+- DOMAIN-SUFFIX,pixiv.net,吹雪云
+- DOMAIN-SUFFIX,playpcesor.com,吹雪云
+- DOMAIN-SUFFIX,playstation.com,吹雪云
+- DOMAIN-SUFFIX,playstation.com.hk,吹雪云
+- DOMAIN-SUFFIX,playstation.net,吹雪云
+- DOMAIN-SUFFIX,playstationnetwork.com,吹雪云
+- DOMAIN-SUFFIX,pushwoosh.com,吹雪云
+- DOMAIN-SUFFIX,rime.im,吹雪云
+- DOMAIN-SUFFIX,servebom.com,吹雪云
+- DOMAIN-SUFFIX,sfx.ms,吹雪云
+- DOMAIN-SUFFIX,shadowsocks.org,吹雪云
+- DOMAIN-SUFFIX,sharethis.com,吹雪云
+- DOMAIN-SUFFIX,shazam.com,吹雪云
+- DOMAIN-SUFFIX,skype.com,吹雪云
+- DOMAIN-SUFFIX,smartdns吹雪云.com,吹雪云
+- DOMAIN-SUFFIX,smartmailcloud.com,吹雪云
+- DOMAIN-SUFFIX,sndcdn.com,吹雪云
+- DOMAIN-SUFFIX,sony.com,吹雪云
+- DOMAIN-SUFFIX,soundcloud.com,吹雪云
+- DOMAIN-SUFFIX,sourceforge.net,吹雪云
+- DOMAIN-SUFFIX,spotify.com,吹雪云
+- DOMAIN-SUFFIX,squarespace.com,吹雪云
+- DOMAIN-SUFFIX,sstatic.net,吹雪云
+- DOMAIN-SUFFIX,st.luluku.pw,吹雪云
+- DOMAIN-SUFFIX,stackoverflow.com,吹雪云
+- DOMAIN-SUFFIX,startpage.com,吹雪云
+- DOMAIN-SUFFIX,staticflickr.com,吹雪云
+- DOMAIN-SUFFIX,steamcommunity.com,吹雪云
+- DOMAIN-SUFFIX,symauth.com,吹雪云
+- DOMAIN-SUFFIX,symcb.com,吹雪云
+- DOMAIN-SUFFIX,symcd.com,吹雪云
+- DOMAIN-SUFFIX,tapbots.com,吹雪云
+- DOMAIN-SUFFIX,tapbots.net,吹雪云
+- DOMAIN-SUFFIX,tdesktop.com,吹雪云
+- DOMAIN-SUFFIX,techcrunch.com,吹雪云
+- DOMAIN-SUFFIX,techsmith.com,吹雪云
+- DOMAIN-SUFFIX,thepiratebay.org,吹雪云
+- DOMAIN-SUFFIX,theverge.com,吹雪云
+- DOMAIN-SUFFIX,time.com,吹雪云
+- DOMAIN-SUFFIX,timeinc.net,吹雪云
+- DOMAIN-SUFFIX,tiny.cc,吹雪云
+- DOMAIN-SUFFIX,tinypic.com,吹雪云
+- DOMAIN-SUFFIX,tmblr.co,吹雪云
+- DOMAIN-SUFFIX,todoist.com,吹雪云
+- DOMAIN-SUFFIX,trello.com,吹雪云
+- DOMAIN-SUFFIX,trustasiassl.com,吹雪云
+- DOMAIN-SUFFIX,tumblr.co,吹雪云
+- DOMAIN-SUFFIX,tumblr.com,吹雪云
+- DOMAIN-SUFFIX,tweetdeck.com,吹雪云
+- DOMAIN-SUFFIX,tweetmarker.net,吹雪云
+- DOMAIN-SUFFIX,twitch.tv,吹雪云
+- DOMAIN-SUFFIX,txmblr.com,吹雪云
+- DOMAIN-SUFFIX,typekit.net,吹雪云
+- DOMAIN-SUFFIX,ubertags.com,吹雪云
+- DOMAIN-SUFFIX,ublock.org,吹雪云
+- DOMAIN-SUFFIX,ubnt.com,吹雪云
+- DOMAIN-SUFFIX,ulyssesapp.com,吹雪云
+- DOMAIN-SUFFIX,urchin.com,吹雪云
+- DOMAIN-SUFFIX,usertrust.com,吹雪云
+- DOMAIN-SUFFIX,v.gd,吹雪云
+- DOMAIN-SUFFIX,v2ex.com,吹雪云
+- DOMAIN-SUFFIX,vimeo.com,吹雪云
+- DOMAIN-SUFFIX,vimeocdn.com,吹雪云
+- DOMAIN-SUFFIX,vine.co,吹雪云
+- DOMAIN-SUFFIX,vivaldi.com,吹雪云
+- DOMAIN-SUFFIX,vox-cdn.com,吹雪云
+- DOMAIN-SUFFIX,vsco.co,吹雪云
+- DOMAIN-SUFFIX,vultr.com,吹雪云
+- DOMAIN-SUFFIX,w.org,吹雪云
+- DOMAIN-SUFFIX,w3schools.com,吹雪云
+- DOMAIN-SUFFIX,webtype.com,吹雪云
+- DOMAIN-SUFFIX,wikiwand.com,吹雪云
+- DOMAIN-SUFFIX,wikileaks.org,吹雪云
+- DOMAIN-SUFFIX,wikimedia.org,吹雪云
+- DOMAIN-SUFFIX,wikipedia.com,吹雪云
+- DOMAIN-SUFFIX,wikipedia.org,吹雪云
+- DOMAIN-SUFFIX,windows.com,吹雪云
+- DOMAIN-SUFFIX,windows.net,吹雪云
+- DOMAIN-SUFFIX,wire.com,吹雪云
+- DOMAIN-SUFFIX,wordpress.com,吹雪云
+- DOMAIN-SUFFIX,workflowy.com,吹雪云
+- DOMAIN-SUFFIX,wp.com,吹雪云
+- DOMAIN-SUFFIX,wsj.com,吹雪云
+- DOMAIN-SUFFIX,wsj.net,吹雪云
+- DOMAIN-SUFFIX,xda-developers.com,吹雪云
+- DOMAIN-SUFFIX,xeeno.com,吹雪云
+- DOMAIN-SUFFIX,xiti.com,吹雪云
+- DOMAIN-SUFFIX,yahoo.com,吹雪云
+- DOMAIN-SUFFIX,yimg.com,吹雪云
+- DOMAIN-SUFFIX,ying.com,吹雪云
+- DOMAIN-SUFFIX,yoyo.org,吹雪云
+- DOMAIN-SUFFIX,ytimg.com,吹雪云
+- DOMAIN-SUFFIX,telegra.ph,吹雪云
+- DOMAIN-SUFFIX,telegram.org,吹雪云
+- IP-CIDR,91.108.4.0/22,吹雪云,no-resolve
+- IP-CIDR,91.108.8.0/21,吹雪云,no-resolve
+- IP-CIDR,91.108.16.0/22,吹雪云,no-resolve
+- IP-CIDR,91.108.56.0/22,吹雪云,no-resolve
+- IP-CIDR,149.154.160.0/20,吹雪云,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,吹雪云,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,吹雪云,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,吹雪云,no-resolve
+- IP-CIDR,120.232.181.162/32,吹雪云,no-resolve
+- IP-CIDR,120.241.147.226/32,吹雪云,no-resolve
+- IP-CIDR,120.253.253.226/32,吹雪云,no-resolve
+- IP-CIDR,120.253.255.162/32,吹雪云,no-resolve
+- IP-CIDR,120.253.255.34/32,吹雪云,no-resolve
+- IP-CIDR,120.253.255.98/32,吹雪云,no-resolve
+- IP-CIDR,180.163.150.162/32,吹雪云,no-resolve
+- IP-CIDR,180.163.150.34/32,吹雪云,no-resolve
+- IP-CIDR,180.163.151.162/32,吹雪云,no-resolve
+- IP-CIDR,180.163.151.34/32,吹雪云,no-resolve
+- IP-CIDR,203.208.39.0/24,吹雪云,no-resolve
+- IP-CIDR,203.208.40.0/24,吹雪云,no-resolve
+- IP-CIDR,203.208.41.0/24,吹雪云,no-resolve
+- IP-CIDR,203.208.43.0/24,吹雪云,no-resolve
+- IP-CIDR,203.208.50.0/24,吹雪云,no-resolve
+- IP-CIDR,220.181.174.162/32,吹雪云,no-resolve
+- IP-CIDR,220.181.174.226/32,吹雪云,no-resolve
+- IP-CIDR,220.181.174.34/32,吹雪云,no-resolve
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- GEOIP,CN,DIRECT
+- PROCESS-NAME,Douyin.exe,吹雪云
+- PROCESS-NAME,TikTok.exe,吹雪云
+- MATCH,DIRECT

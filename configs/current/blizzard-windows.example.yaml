@@ -1,0 +1,1541 @@
+# REDACTED STRUCTURAL TEMPLATE — not a usable subscription.
+# Historical validation does not establish current reachability.
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+unified-delay: true
+tcp-concurrent: true
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - https://223.5.5.5/dns-query#DIRECT
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  respect-rules: true
+  proxy-server-nameserver:
+  - https://223.5.5.5/dns-query#DIRECT
+  nameserver:
+  - https://1.1.1.1/dns-query#出口选择
+  - https://8.8.8.8/dns-query#出口选择
+  fallback:
+  - https://1.1.1.1/dns-query#出口选择
+  - https://8.8.8.8/dns-query#出口选择
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+    - gfw
+    ipcidr:
+    - 240.0.0.0/4
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+  nameserver-policy:
+    +.muse.ai:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    +.museai.com:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    agent.meta.ai:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    hatch.meta.ai:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    auth.meta.com:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    nest-static.fbcdn.net:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    connect.facebook.net:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    meta-ohttp-config-prod.fastly-edge.com:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    meta-ohttp-relay-prod.fastly-edge.com:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    +.metaaivm.com:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    hatch-api.meta.ai:
+    - https://1.1.1.1/dns-query#出口选择
+    - https://8.8.8.8/dns-query#出口选择
+    +.google.com: https://1.1.1.1/dns-query#出口选择
+    +.googleapis.com: https://1.1.1.1/dns-query#出口选择
+    +.googleapis.cn: https://1.1.1.1/dns-query#出口选择
+    +.googlevideo.com: https://1.1.1.1/dns-query#出口选择
+    +.gstatic.com: https://1.1.1.1/dns-query#出口选择
+    +.youtube.com: https://1.1.1.1/dns-query#出口选择
+    +.youtu.be: https://1.1.1.1/dns-query#出口选择
+    +.facebook.com: https://1.1.1.1/dns-query#出口选择
+    +.twitter.com: https://1.1.1.1/dns-query#出口选择
+    +.x.com: https://1.1.1.1/dns-query#出口选择
+    +.github.com: https://1.1.1.1/dns-query#出口选择
+    +.githubusercontent.com: https://1.1.1.1/dns-query#出口选择
+    +.openai.com: https://1.1.1.1/dns-query#出口选择
+    +.chatgpt.com: https://1.1.1.1/dns-query#出口选择
+    +.anthropic.com: https://1.1.1.1/dns-query#出口选择
+  listen: 127.0.0.1:7874
+proxies:
+- name: 剩余流量：374.52 GB
+  type: vless
+  server: 192.0.2.8
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 距离下次重置剩余：14 天
+  type: vless
+  server: 192.0.2.8
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 套餐到期：2027-01-20
+  type: vless
+  server: 192.0.2.8
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇯🇵日本•移联01
+  type: vless
+  server: 192.0.2.8
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇯🇵日本•移联02
+  type: vless
+  server: 192.0.2.13
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇸🇬新加坡•移联01
+  type: vless
+  server: 192.0.2.16
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇸🇬新加坡•移联02
+  type: vless
+  server: 192.0.2.17
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇭🇰香港•移联01
+  type: vless
+  server: 192.0.2.18
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇭🇰香港•移联02
+  type: vless
+  server: 192.0.2.9
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇨🇳台湾•移联01
+  type: vless
+  server: 192.0.2.10
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇰🇷韩国•移联01
+  type: vless
+  server: 192.0.2.11
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇺🇸美国•移联01
+  type: vless
+  server: 192.0.2.12
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇬🇧英国•移联01
+  type: vless
+  server: 192.0.2.14
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇩🇪德国•移联01
+  type: vless
+  server: 192.0.2.15
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  reality-opts:
+    public-key: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+    short-id: '00000000'
+- name: 🇯🇵日本•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇯🇵日本•电信02
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇸🇬新加坡•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇸🇬新加坡•电信02
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇭🇰香港•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇭🇰香港•电信02
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇨🇳台湾•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇰🇷韩国•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇺🇸美国•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇬🇧英国•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: ios
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 🇩🇪德国•电信01
+  type: vless
+  server: 192.0.2.7
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  flow: ''
+  client-fingerprint: safari
+  servername: proxy-tls.example.invalid
+  network: ws
+  ws-opts:
+    path: /REDACTED_PATH
+    headers:
+      Host: proxy-host.example.invalid
+- name: 洛杉矶住宅静态IP
+  type: socks5
+  server: 192.0.2.2
+  port: 443
+  username: REDACTED_USERNAME
+  password: REDACTED_PASSWORD
+  udp: false
+  dialer-proxy: 机场中转自动择优
+proxy-groups:
+- name: 出口选择
+  type: select
+  proxies:
+  - 洛杉矶住宅静态IP
+  - 🇯🇵日本•移联01
+  - 🇯🇵日本•移联02
+  - 🇸🇬新加坡•移联01
+  - 🇸🇬新加坡•移联02
+  - 🇭🇰香港•移联01
+  - 🇭🇰香港•移联02
+  - 🇨🇳台湾•移联01
+  - 🇰🇷韩国•移联01
+  - 🇺🇸美国•移联01
+  - 🇬🇧英国•移联01
+  - 🇩🇪德国•移联01
+  - 🇯🇵日本•电信01
+  - 🇯🇵日本•电信02
+  - 🇸🇬新加坡•电信01
+  - 🇸🇬新加坡•电信02
+  - 🇭🇰香港•电信01
+  - 🇭🇰香港•电信02
+  - 🇨🇳台湾•电信01
+  - 🇰🇷韩国•电信01
+  - 🇺🇸美国•电信01
+  - 🇬🇧英国•电信01
+  - 🇩🇪德国•电信01
+- name: 机场中转自动择优
+  type: url-test
+  proxies:
+  - 🇯🇵日本•移联01
+  - 🇯🇵日本•移联02
+  - 🇸🇬新加坡•移联01
+  - 🇸🇬新加坡•移联02
+  - 🇭🇰香港•移联01
+  - 🇭🇰香港•移联02
+  - 🇨🇳台湾•移联01
+  - 🇰🇷韩国•移联01
+  - 🇺🇸美国•移联01
+  - 🇬🇧英国•移联01
+  - 🇩🇪德国•移联01
+  - 🇯🇵日本•电信01
+  - 🇯🇵日本•电信02
+  - 🇸🇬新加坡•电信01
+  - 🇸🇬新加坡•电信02
+  - 🇭🇰香港•电信01
+  - 🇭🇰香港•电信02
+  - 🇨🇳台湾•电信01
+  - 🇰🇷韩国•电信01
+  - 🇺🇸美国•电信01
+  - 🇬🇧英国•电信01
+  - 🇩🇪德国•电信01
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  lazy: true
+  hidden: false
+- name: GLOBAL
+  type: select
+  proxies:
+  - 出口选择
+rules:
+- DOMAIN,localhost,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- DOMAIN-SUFFIX,lan,DIRECT
+- DOMAIN-SUFFIX,home.arpa,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+- IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+- IP-CIDR6,::1/128,DIRECT,no-resolve
+- IP-CIDR6,fc00::/7,DIRECT,no-resolve
+- IP-CIDR6,fe80::/10,DIRECT,no-resolve
+- DOMAIN-SUFFIX,x.com,出口选择
+- AND,((DOMAIN-SUFFIX,x.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,t.co,出口选择
+- AND,((DOMAIN-SUFFIX,t.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,metaaivm.com,出口选择
+- AND,((DOMAIN-SUFFIX,metaaivm.com),(NETWORK,UDP)),REJECT
+- DOMAIN,meta-ohttp-config-prod.fastly-edge.com,出口选择
+- AND,((DOMAIN,meta-ohttp-config-prod.fastly-edge.com),(NETWORK,UDP)),REJECT
+- DOMAIN,meta-ohttp-relay-prod.fastly-edge.com,出口选择
+- AND,((DOMAIN,meta-ohttp-relay-prod.fastly-edge.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,muse.ai,出口选择
+- AND,((DOMAIN-SUFFIX,muse.ai),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,muse,出口选择
+- AND,((DOMAIN-KEYWORD,muse),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,museai.com,出口选择
+- AND,((DOMAIN-SUFFIX,museai.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,meta.ai,出口选择
+- AND,((DOMAIN-SUFFIX,meta.ai),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,meta.com,出口选择
+- AND,((DOMAIN-SUFFIX,meta.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,meta.net,出口选择
+- AND,((DOMAIN-SUFFIX,meta.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fb.com,出口选择
+- AND,((DOMAIN-SUFFIX,fb.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,facebook.com,出口选择
+- AND,((DOMAIN-SUFFIX,facebook.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fbcdn.net,出口选择
+- AND,((DOMAIN-SUFFIX,fbcdn.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,douyinvod.com,DIRECT
+- DOMAIN-SUFFIX,douyinpic.com,DIRECT
+- DOMAIN-SUFFIX,douyincdn.com,DIRECT
+- DOMAIN-SUFFIX,douyinstatic.com,DIRECT
+- DOMAIN-SUFFIX,byteeffecttos.com,DIRECT
+- DOMAIN-SUFFIX,byteeffectcharges.com,DIRECT
+- DOMAIN-SUFFIX,volccdn.com,DIRECT
+- DOMAIN-SUFFIX,volcvideo.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,tiktokcdn.com,出口选择
+- AND,((DOMAIN-SUFFIX,tiktokcdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktokcdn-us.com,出口选择
+- AND,((DOMAIN-SUFFIX,tiktokcdn-us.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktokcdn-eu.com,出口选择
+- AND,((DOMAIN-SUFFIX,tiktokcdn-eu.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ttwstatic.com,出口选择
+- AND,((DOMAIN-SUFFIX,ttwstatic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,byteoversea.com,出口选择
+- AND,((DOMAIN-SUFFIX,byteoversea.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ibytedtos.com,出口选择
+- AND,((DOMAIN-SUFFIX,ibytedtos.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ibyteimg.com,出口选择
+- AND,((DOMAIN-SUFFIX,ibyteimg.com),(NETWORK,UDP)),REJECT
+- DOMAIN,v16m-default.akamaized.net,出口选择
+- AND,((DOMAIN,v16m-default.akamaized.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,douyin.com,出口选择
+- AND,((DOMAIN-SUFFIX,douyin.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,amemv.com,出口选择
+- AND,((DOMAIN-SUFFIX,amemv.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,iesdouyin.com,出口选择
+- AND,((DOMAIN-SUFFIX,iesdouyin.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,zijieapi.com,出口选择
+- AND,((DOMAIN-SUFFIX,zijieapi.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,snssdk.com,出口选择
+- AND,((DOMAIN-SUFFIX,snssdk.com),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,douyin.exe,出口选择
+- AND,((PROCESS-NAME,douyin.exe),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,douyin_guard.exe,出口选择
+- AND,((PROCESS-NAME,douyin_guard.exe),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,douyin_tray.exe,出口选择
+- AND,((PROCESS-NAME,douyin_tray.exe),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,douyin_widget.exe,出口选择
+- AND,((PROCESS-NAME,douyin_widget.exe),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktok.com,出口选择
+- AND,((DOMAIN-SUFFIX,tiktok.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktokv.com,出口选择
+- AND,((DOMAIN-SUFFIX,tiktokv.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktokapis.com,出口选择
+- AND,((DOMAIN-SUFFIX,tiktokapis.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiktokd.org,出口选择
+- AND,((DOMAIN-SUFFIX,tiktokd.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,musical.ly,出口选择
+- AND,((DOMAIN-SUFFIX,musical.ly),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,openai.com,出口选择
+- AND,((DOMAIN-SUFFIX,openai.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,chatgpt.com,出口选择
+- AND,((DOMAIN-SUFFIX,chatgpt.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,oaistatic.com,出口选择
+- AND,((DOMAIN-SUFFIX,oaistatic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,oaiusercontent.com,出口选择
+- AND,((DOMAIN-SUFFIX,oaiusercontent.com),(NETWORK,UDP)),REJECT
+- DOMAIN,chat.openai.auth0.com,出口选择
+- AND,((DOMAIN,chat.openai.auth0.com),(NETWORK,UDP)),REJECT
+- DOMAIN,cdn.auth0.com,出口选择
+- AND,((DOMAIN,cdn.auth0.com),(NETWORK,UDP)),REJECT
+- DOMAIN,challenges.cloudflare.com,出口选择
+- AND,((DOMAIN,challenges.cloudflare.com),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,codex.exe,出口选择
+- AND,((PROCESS-NAME,codex.exe),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,ChatGPT.exe,出口选择
+- AND,((PROCESS-NAME,ChatGPT.exe),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ipwho.is,出口选择
+- AND,((DOMAIN-SUFFIX,ipwho.is),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,myip.com,出口选择
+- AND,((DOMAIN-SUFFIX,myip.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ipapi.co,出口选择
+- AND,((DOMAIN-SUFFIX,ipapi.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ident.me,出口选择
+- AND,((DOMAIN-SUFFIX,ident.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ip-api.com,出口选择
+- AND,((DOMAIN-SUFFIX,ip-api.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ip.sb,出口选择
+- AND,((DOMAIN-SUFFIX,ip.sb),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ipinfo.io,出口选择
+- AND,((DOMAIN-SUFFIX,ipinfo.io),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,notion.so,出口选择
+- AND,((DOMAIN-SUFFIX,notion.so),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,notion.com,出口选择
+- AND,((DOMAIN-SUFFIX,notion.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,notion.site,出口选择
+- AND,((DOMAIN-SUFFIX,notion.site),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,notion-static.com,出口选择
+- AND,((DOMAIN-SUFFIX,notion-static.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,t.me,出口选择
+- AND,((DOMAIN-SUFFIX,t.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,telegram.me,出口选择
+- AND,((DOMAIN-SUFFIX,telegram.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,telesco.pe,出口选择
+- AND,((DOMAIN-SUFFIX,telesco.pe),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,telegram-cdn.org,出口选择
+- AND,((DOMAIN-SUFFIX,telegram-cdn.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cdn-telegram.org,出口选择
+- AND,((DOMAIN-SUFFIX,cdn-telegram.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cloudflare.com,出口选择
+- AND,((DOMAIN-SUFFIX,cloudflare.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,geojs.io,出口选择
+- AND,((DOMAIN-SUFFIX,geojs.io),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,country.is,出口选择
+- AND,((DOMAIN-SUFFIX,country.is),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ipquery.io,出口选择
+- AND,((DOMAIN-SUFFIX,ipquery.io),(NETWORK,UDP)),REJECT
+- PROCESS-NAME,TikTok.exe,出口选择
+- AND,((PROCESS-NAME,TikTok.exe),(NETWORK,UDP)),REJECT
+- IP-CIDR,1.1.1.1/32,出口选择,no-resolve
+- AND,((IP-CIDR,1.1.1.1/32),(NETWORK,UDP)),REJECT
+- IP-CIDR,8.8.8.8/32,出口选择,no-resolve
+- AND,((IP-CIDR,8.8.8.8/32),(NETWORK,UDP)),REJECT
+- IP-CIDR,8.8.4.4/32,出口选择,no-resolve
+- AND,((IP-CIDR,8.8.4.4/32),(NETWORK,UDP)),REJECT
+- IP-CIDR,1.0.0.1/32,出口选择,no-resolve
+- AND,((IP-CIDR,1.0.0.1/32),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,services.googleapis.cn,出口选择
+- AND,((DOMAIN-SUFFIX,services.googleapis.cn),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,出口选择
+- AND,((DOMAIN-SUFFIX,xn--ngstr-lra8j.com),(NETWORK,UDP)),REJECT
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,出口选择
+- AND,((DOMAIN,developer.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,digicert.com,出口选择
+- AND,((DOMAIN-SUFFIX,digicert.com),(NETWORK,UDP)),REJECT
+- DOMAIN,ocsp.apple.com,出口选择
+- AND,((DOMAIN,ocsp.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN,ocsp.comodoca.com,出口选择
+- AND,((DOMAIN,ocsp.comodoca.com),(NETWORK,UDP)),REJECT
+- DOMAIN,ocsp.usertrust.com,出口选择
+- AND,((DOMAIN,ocsp.usertrust.com),(NETWORK,UDP)),REJECT
+- DOMAIN,ocsp.sectigo.com,出口选择
+- AND,((DOMAIN,ocsp.sectigo.com),(NETWORK,UDP)),REJECT
+- DOMAIN,ocsp.verisign.net,出口选择
+- AND,((DOMAIN,ocsp.verisign.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,apple-dns.net,出口选择
+- AND,((DOMAIN-SUFFIX,apple-dns.net),(NETWORK,UDP)),REJECT
+- DOMAIN,testflight.apple.com,出口选择
+- AND,((DOMAIN,testflight.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN,sandbox.itunes.apple.com,出口选择
+- AND,((DOMAIN,sandbox.itunes.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN,itunes.apple.com,出口选择
+- AND,((DOMAIN,itunes.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,apps.apple.com,出口选择
+- AND,((DOMAIN-SUFFIX,apps.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,blobstore.apple.com,出口选择
+- AND,((DOMAIN-SUFFIX,blobstore.apple.com),(NETWORK,UDP)),REJECT
+- DOMAIN,cvws.icloud-content.com,出口选择
+- AND,((DOMAIN,cvws.icloud-content.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN,cn.bing.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,出口选择
+- AND,((DOMAIN-KEYWORD,amazon),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,google,出口选择
+- AND,((DOMAIN-KEYWORD,google),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,gmail,出口选择
+- AND,((DOMAIN-KEYWORD,gmail),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,youtube,出口选择
+- AND,((DOMAIN-KEYWORD,youtube),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,facebook,出口选择
+- AND,((DOMAIN-KEYWORD,facebook),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fb.me,出口选择
+- AND,((DOMAIN-SUFFIX,fb.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fbcdn.net,出口选择
+- AND,((DOMAIN-SUFFIX,fbcdn.net),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,twitter,出口选择
+- AND,((DOMAIN-KEYWORD,twitter),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,instagram,出口选择
+- AND,((DOMAIN-KEYWORD,instagram),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,dropbox,出口选择
+- AND,((DOMAIN-KEYWORD,dropbox),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,twimg.com,出口选择
+- AND,((DOMAIN-SUFFIX,twimg.com),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,blogspot,出口选择
+- AND,((DOMAIN-KEYWORD,blogspot),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,youtu.be,出口选择
+- AND,((DOMAIN-SUFFIX,youtu.be),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,whatsapp,出口选择
+- AND,((DOMAIN-KEYWORD,whatsapp),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,出口选择
+- AND,((DOMAIN-SUFFIX,9to5mac.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,abpchina.org,出口选择
+- AND,((DOMAIN-SUFFIX,abpchina.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,adblockplus.org,出口选择
+- AND,((DOMAIN-SUFFIX,adblockplus.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,adobe.com,出口选择
+- AND,((DOMAIN-SUFFIX,adobe.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,akamaized.net,出口选择
+- AND,((DOMAIN-SUFFIX,akamaized.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,alfredapp.com,出口选择
+- AND,((DOMAIN-SUFFIX,alfredapp.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,amplitude.com,出口选择
+- AND,((DOMAIN-SUFFIX,amplitude.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ampproject.org,出口选择
+- AND,((DOMAIN-SUFFIX,ampproject.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,android.com,出口选择
+- AND,((DOMAIN-SUFFIX,android.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,angularjs.org,出口选择
+- AND,((DOMAIN-SUFFIX,angularjs.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,aolcdn.com,出口选择
+- AND,((DOMAIN-SUFFIX,aolcdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,apkpure.com,出口选择
+- AND,((DOMAIN-SUFFIX,apkpure.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,appledaily.com,出口选择
+- AND,((DOMAIN-SUFFIX,appledaily.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,appshopper.com,出口选择
+- AND,((DOMAIN-SUFFIX,appshopper.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,appspot.com,出口选择
+- AND,((DOMAIN-SUFFIX,appspot.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,arcgis.com,出口选择
+- AND,((DOMAIN-SUFFIX,arcgis.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,archive.org,出口选择
+- AND,((DOMAIN-SUFFIX,archive.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,armorgames.com,出口选择
+- AND,((DOMAIN-SUFFIX,armorgames.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,aspnetcdn.com,出口选择
+- AND,((DOMAIN-SUFFIX,aspnetcdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,att.com,出口选择
+- AND,((DOMAIN-SUFFIX,att.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,awsstatic.com,出口选择
+- AND,((DOMAIN-SUFFIX,awsstatic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,azureedge.net,出口选择
+- AND,((DOMAIN-SUFFIX,azureedge.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,azurewebsites.net,出口选择
+- AND,((DOMAIN-SUFFIX,azurewebsites.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bing.com,出口选择
+- AND,((DOMAIN-SUFFIX,bing.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bintray.com,出口选择
+- AND,((DOMAIN-SUFFIX,bintray.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bit.com,出口选择
+- AND,((DOMAIN-SUFFIX,bit.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bit.ly,出口选择
+- AND,((DOMAIN-SUFFIX,bit.ly),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bitbucket.org,出口选择
+- AND,((DOMAIN-SUFFIX,bitbucket.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bjango.com,出口选择
+- AND,((DOMAIN-SUFFIX,bjango.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bkrtx.com,出口选择
+- AND,((DOMAIN-SUFFIX,bkrtx.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,blog.com,出口选择
+- AND,((DOMAIN-SUFFIX,blog.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,blogcdn.com,出口选择
+- AND,((DOMAIN-SUFFIX,blogcdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,blogger.com,出口选择
+- AND,((DOMAIN-SUFFIX,blogger.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,blogsmithmedia.com,出口选择
+- AND,((DOMAIN-SUFFIX,blogsmithmedia.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,blogspot.com,出口选择
+- AND,((DOMAIN-SUFFIX,blogspot.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,blogspot.hk,出口选择
+- AND,((DOMAIN-SUFFIX,blogspot.hk),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,bloomberg.com,出口选择
+- AND,((DOMAIN-SUFFIX,bloomberg.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,box.com,出口选择
+- AND,((DOMAIN-SUFFIX,box.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,box.net,出口选择
+- AND,((DOMAIN-SUFFIX,box.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cachefly.net,出口选择
+- AND,((DOMAIN-SUFFIX,cachefly.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,chromium.org,出口选择
+- AND,((DOMAIN-SUFFIX,chromium.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cl.ly,出口选择
+- AND,((DOMAIN-SUFFIX,cl.ly),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cloudflare.com,出口选择
+- AND,((DOMAIN-SUFFIX,cloudflare.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cloudfront.net,出口选择
+- AND,((DOMAIN-SUFFIX,cloudfront.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cloudmagic.com,出口选择
+- AND,((DOMAIN-SUFFIX,cloudmagic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cmail19.com,出口选择
+- AND,((DOMAIN-SUFFIX,cmail19.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cnet.com,出口选择
+- AND,((DOMAIN-SUFFIX,cnet.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,cocoapods.org,出口选择
+- AND,((DOMAIN-SUFFIX,cocoapods.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,comodoca.com,出口选择
+- AND,((DOMAIN-SUFFIX,comodoca.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,crashlytics.com,出口选择
+- AND,((DOMAIN-SUFFIX,crashlytics.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,culturedcode.com,出口选择
+- AND,((DOMAIN-SUFFIX,culturedcode.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,d.pr,出口选择
+- AND,((DOMAIN-SUFFIX,d.pr),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,danilo.to,出口选择
+- AND,((DOMAIN-SUFFIX,danilo.to),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,dayone.me,出口选择
+- AND,((DOMAIN-SUFFIX,dayone.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,db.tt,出口选择
+- AND,((DOMAIN-SUFFIX,db.tt),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,deskconnect.com,出口选择
+- AND,((DOMAIN-SUFFIX,deskconnect.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,disq.us,出口选择
+- AND,((DOMAIN-SUFFIX,disq.us),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,disqus.com,出口选择
+- AND,((DOMAIN-SUFFIX,disqus.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,disquscdn.com,出口选择
+- AND,((DOMAIN-SUFFIX,disquscdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,dnsimple.com,出口选择
+- AND,((DOMAIN-SUFFIX,dnsimple.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,docker.com,出口选择
+- AND,((DOMAIN-SUFFIX,docker.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,dribbble.com,出口选择
+- AND,((DOMAIN-SUFFIX,dribbble.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,droplr.com,出口选择
+- AND,((DOMAIN-SUFFIX,droplr.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,duckduckgo.com,出口选择
+- AND,((DOMAIN-SUFFIX,duckduckgo.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,dueapp.com,出口选择
+- AND,((DOMAIN-SUFFIX,dueapp.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,dytt8.net,出口选择
+- AND,((DOMAIN-SUFFIX,dytt8.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,edgecastcdn.net,出口选择
+- AND,((DOMAIN-SUFFIX,edgecastcdn.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,edgekey.net,出口选择
+- AND,((DOMAIN-SUFFIX,edgekey.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,edgesuite.net,出口选择
+- AND,((DOMAIN-SUFFIX,edgesuite.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,engadget.com,出口选择
+- AND,((DOMAIN-SUFFIX,engadget.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,entrust.net,出口选择
+- AND,((DOMAIN-SUFFIX,entrust.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,eurekavpt.com,出口选择
+- AND,((DOMAIN-SUFFIX,eurekavpt.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,evernote.com,出口选择
+- AND,((DOMAIN-SUFFIX,evernote.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fabric.io,出口选择
+- AND,((DOMAIN-SUFFIX,fabric.io),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fast.com,出口选择
+- AND,((DOMAIN-SUFFIX,fast.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fastly.net,出口选择
+- AND,((DOMAIN-SUFFIX,fastly.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fc2.com,出口选择
+- AND,((DOMAIN-SUFFIX,fc2.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,feedburner.com,出口选择
+- AND,((DOMAIN-SUFFIX,feedburner.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,feedly.com,出口选择
+- AND,((DOMAIN-SUFFIX,feedly.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,feedsportal.com,出口选择
+- AND,((DOMAIN-SUFFIX,feedsportal.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,fiftythree.com,出口选择
+- AND,((DOMAIN-SUFFIX,fiftythree.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,firebaseio.com,出口选择
+- AND,((DOMAIN-SUFFIX,firebaseio.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,flexibits.com,出口选择
+- AND,((DOMAIN-SUFFIX,flexibits.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,flickr.com,出口选择
+- AND,((DOMAIN-SUFFIX,flickr.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,flipboard.com,出口选择
+- AND,((DOMAIN-SUFFIX,flipboard.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,g.co,出口选择
+- AND,((DOMAIN-SUFFIX,g.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gabia.net,出口选择
+- AND,((DOMAIN-SUFFIX,gabia.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,geni.us,出口选择
+- AND,((DOMAIN-SUFFIX,geni.us),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gfx.ms,出口选择
+- AND,((DOMAIN-SUFFIX,gfx.ms),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ggpht.com,出口选择
+- AND,((DOMAIN-SUFFIX,ggpht.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ghostnoteapp.com,出口选择
+- AND,((DOMAIN-SUFFIX,ghostnoteapp.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,git.io,出口选择
+- AND,((DOMAIN-SUFFIX,git.io),(NETWORK,UDP)),REJECT
+- DOMAIN-KEYWORD,github,出口选择
+- AND,((DOMAIN-KEYWORD,github),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,globalsign.com,出口选择
+- AND,((DOMAIN-SUFFIX,globalsign.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gmodules.com,出口选择
+- AND,((DOMAIN-SUFFIX,gmodules.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,godaddy.com,出口选择
+- AND,((DOMAIN-SUFFIX,godaddy.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,golang.org,出口选择
+- AND,((DOMAIN-SUFFIX,golang.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gongm.in,出口选择
+- AND,((DOMAIN-SUFFIX,gongm.in),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,goo.gl,出口选择
+- AND,((DOMAIN-SUFFIX,goo.gl),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,goodreaders.com,出口选择
+- AND,((DOMAIN-SUFFIX,goodreaders.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,goodreads.com,出口选择
+- AND,((DOMAIN-SUFFIX,goodreads.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gravatar.com,出口选择
+- AND,((DOMAIN-SUFFIX,gravatar.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gstatic.com,出口选择
+- AND,((DOMAIN-SUFFIX,gstatic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,gvt0.com,出口选择
+- AND,((DOMAIN-SUFFIX,gvt0.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,hockeyapp.net,出口选择
+- AND,((DOMAIN-SUFFIX,hockeyapp.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,hotmail.com,出口选择
+- AND,((DOMAIN-SUFFIX,hotmail.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,icons8.com,出口选择
+- AND,((DOMAIN-SUFFIX,icons8.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ifixit.com,出口选择
+- AND,((DOMAIN-SUFFIX,ifixit.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ift.tt,出口选择
+- AND,((DOMAIN-SUFFIX,ift.tt),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ifttt.com,出口选择
+- AND,((DOMAIN-SUFFIX,ifttt.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,iherb.com,出口选择
+- AND,((DOMAIN-SUFFIX,iherb.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,imageshack.us,出口选择
+- AND,((DOMAIN-SUFFIX,imageshack.us),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,img.ly,出口选择
+- AND,((DOMAIN-SUFFIX,img.ly),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,imgur.com,出口选择
+- AND,((DOMAIN-SUFFIX,imgur.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,imore.com,出口选择
+- AND,((DOMAIN-SUFFIX,imore.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,instapaper.com,出口选择
+- AND,((DOMAIN-SUFFIX,instapaper.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ipn.li,出口选择
+- AND,((DOMAIN-SUFFIX,ipn.li),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,is.gd,出口选择
+- AND,((DOMAIN-SUFFIX,is.gd),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,issuu.com,出口选择
+- AND,((DOMAIN-SUFFIX,issuu.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,itgonglun.com,出口选择
+- AND,((DOMAIN-SUFFIX,itgonglun.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,itun.es,出口选择
+- AND,((DOMAIN-SUFFIX,itun.es),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ixquick.com,出口选择
+- AND,((DOMAIN-SUFFIX,ixquick.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,j.mp,出口选择
+- AND,((DOMAIN-SUFFIX,j.mp),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,js.revsci.net,出口选择
+- AND,((DOMAIN-SUFFIX,js.revsci.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,jshint.com,出口选择
+- AND,((DOMAIN-SUFFIX,jshint.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,jtvnw.net,出口选择
+- AND,((DOMAIN-SUFFIX,jtvnw.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,justgetflux.com,出口选择
+- AND,((DOMAIN-SUFFIX,justgetflux.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,kat.cr,出口选择
+- AND,((DOMAIN-SUFFIX,kat.cr),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,klip.me,出口选择
+- AND,((DOMAIN-SUFFIX,klip.me),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,libsyn.com,出口选择
+- AND,((DOMAIN-SUFFIX,libsyn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,linkedin.com,出口选择
+- AND,((DOMAIN-SUFFIX,linkedin.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,line-apps.com,出口选择
+- AND,((DOMAIN-SUFFIX,line-apps.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,linode.com,出口选择
+- AND,((DOMAIN-SUFFIX,linode.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,lithium.com,出口选择
+- AND,((DOMAIN-SUFFIX,lithium.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,littlehj.com,出口选择
+- AND,((DOMAIN-SUFFIX,littlehj.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,live.com,出口选择
+- AND,((DOMAIN-SUFFIX,live.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,live.net,出口选择
+- AND,((DOMAIN-SUFFIX,live.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,livefilestore.com,出口选择
+- AND,((DOMAIN-SUFFIX,livefilestore.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,llnwd.net,出口选择
+- AND,((DOMAIN-SUFFIX,llnwd.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,macid.co,出口选择
+- AND,((DOMAIN-SUFFIX,macid.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,macromedia.com,出口选择
+- AND,((DOMAIN-SUFFIX,macromedia.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,macrumors.com,出口选择
+- AND,((DOMAIN-SUFFIX,macrumors.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,mashable.com,出口选择
+- AND,((DOMAIN-SUFFIX,mashable.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,mathjax.org,出口选择
+- AND,((DOMAIN-SUFFIX,mathjax.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,medium.com,出口选择
+- AND,((DOMAIN-SUFFIX,medium.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,mega.co.nz,出口选择
+- AND,((DOMAIN-SUFFIX,mega.co.nz),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,mega.nz,出口选择
+- AND,((DOMAIN-SUFFIX,mega.nz),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,megaupload.com,出口选择
+- AND,((DOMAIN-SUFFIX,megaupload.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,microsofttranslator.com,出口选择
+- AND,((DOMAIN-SUFFIX,microsofttranslator.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,mindnode.com,出口选择
+- AND,((DOMAIN-SUFFIX,mindnode.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,mobile01.com,出口选择
+- AND,((DOMAIN-SUFFIX,mobile01.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,modmyi.com,出口选择
+- AND,((DOMAIN-SUFFIX,modmyi.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,msedge.net,出口选择
+- AND,((DOMAIN-SUFFIX,msedge.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,myfontastic.com,出口选择
+- AND,((DOMAIN-SUFFIX,myfontastic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,name.com,出口选择
+- AND,((DOMAIN-SUFFIX,name.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,nextmedia.com,出口选择
+- AND,((DOMAIN-SUFFIX,nextmedia.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,nsstatic.net,出口选择
+- AND,((DOMAIN-SUFFIX,nsstatic.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,nssurge.com,出口选择
+- AND,((DOMAIN-SUFFIX,nssurge.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,nyt.com,出口选择
+- AND,((DOMAIN-SUFFIX,nyt.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,nytimes.com,出口选择
+- AND,((DOMAIN-SUFFIX,nytimes.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,omnigroup.com,出口选择
+- AND,((DOMAIN-SUFFIX,omnigroup.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,onedrive.com,出口选择
+- AND,((DOMAIN-SUFFIX,onedrive.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,onenote.com,出口选择
+- AND,((DOMAIN-SUFFIX,onenote.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ooyala.com,出口选择
+- AND,((DOMAIN-SUFFIX,ooyala.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,openvpn.net,出口选择
+- AND,((DOMAIN-SUFFIX,openvpn.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,openwrt.org,出口选择
+- AND,((DOMAIN-SUFFIX,openwrt.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,orkut.com,出口选择
+- AND,((DOMAIN-SUFFIX,orkut.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,osxdaily.com,出口选择
+- AND,((DOMAIN-SUFFIX,osxdaily.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,outlook.com,出口选择
+- AND,((DOMAIN-SUFFIX,outlook.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ow.ly,出口选择
+- AND,((DOMAIN-SUFFIX,ow.ly),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,paddleapi.com,出口选择
+- AND,((DOMAIN-SUFFIX,paddleapi.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,parallels.com,出口选择
+- AND,((DOMAIN-SUFFIX,parallels.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,parse.com,出口选择
+- AND,((DOMAIN-SUFFIX,parse.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,pdfexpert.com,出口选择
+- AND,((DOMAIN-SUFFIX,pdfexpert.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,periscope.tv,出口选择
+- AND,((DOMAIN-SUFFIX,periscope.tv),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,pinboard.in,出口选择
+- AND,((DOMAIN-SUFFIX,pinboard.in),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,pinterest.com,出口选择
+- AND,((DOMAIN-SUFFIX,pinterest.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,pixelmator.com,出口选择
+- AND,((DOMAIN-SUFFIX,pixelmator.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,pixiv.net,出口选择
+- AND,((DOMAIN-SUFFIX,pixiv.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,playpcesor.com,出口选择
+- AND,((DOMAIN-SUFFIX,playpcesor.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,playstation.com,出口选择
+- AND,((DOMAIN-SUFFIX,playstation.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,playstation.com.hk,出口选择
+- AND,((DOMAIN-SUFFIX,playstation.com.hk),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,playstation.net,出口选择
+- AND,((DOMAIN-SUFFIX,playstation.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,playstationnetwork.com,出口选择
+- AND,((DOMAIN-SUFFIX,playstationnetwork.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,pushwoosh.com,出口选择
+- AND,((DOMAIN-SUFFIX,pushwoosh.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,rime.im,出口选择
+- AND,((DOMAIN-SUFFIX,rime.im),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,servebom.com,出口选择
+- AND,((DOMAIN-SUFFIX,servebom.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,sfx.ms,出口选择
+- AND,((DOMAIN-SUFFIX,sfx.ms),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,shadowsocks.org,出口选择
+- AND,((DOMAIN-SUFFIX,shadowsocks.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,sharethis.com,出口选择
+- AND,((DOMAIN-SUFFIX,sharethis.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,shazam.com,出口选择
+- AND,((DOMAIN-SUFFIX,shazam.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,skype.com,出口选择
+- AND,((DOMAIN-SUFFIX,skype.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,smartdns吹雪云.com,出口选择
+- AND,((DOMAIN-SUFFIX,smartdns吹雪云.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,smartmailcloud.com,出口选择
+- AND,((DOMAIN-SUFFIX,smartmailcloud.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,sndcdn.com,出口选择
+- AND,((DOMAIN-SUFFIX,sndcdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,sony.com,出口选择
+- AND,((DOMAIN-SUFFIX,sony.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,soundcloud.com,出口选择
+- AND,((DOMAIN-SUFFIX,soundcloud.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,sourceforge.net,出口选择
+- AND,((DOMAIN-SUFFIX,sourceforge.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,spotify.com,出口选择
+- AND,((DOMAIN-SUFFIX,spotify.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,squarespace.com,出口选择
+- AND,((DOMAIN-SUFFIX,squarespace.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,sstatic.net,出口选择
+- AND,((DOMAIN-SUFFIX,sstatic.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,st.luluku.pw,出口选择
+- AND,((DOMAIN-SUFFIX,st.luluku.pw),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,stackoverflow.com,出口选择
+- AND,((DOMAIN-SUFFIX,stackoverflow.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,startpage.com,出口选择
+- AND,((DOMAIN-SUFFIX,startpage.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,staticflickr.com,出口选择
+- AND,((DOMAIN-SUFFIX,staticflickr.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,steamcommunity.com,出口选择
+- AND,((DOMAIN-SUFFIX,steamcommunity.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,symauth.com,出口选择
+- AND,((DOMAIN-SUFFIX,symauth.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,symcb.com,出口选择
+- AND,((DOMAIN-SUFFIX,symcb.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,symcd.com,出口选择
+- AND,((DOMAIN-SUFFIX,symcd.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tapbots.com,出口选择
+- AND,((DOMAIN-SUFFIX,tapbots.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tapbots.net,出口选择
+- AND,((DOMAIN-SUFFIX,tapbots.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tdesktop.com,出口选择
+- AND,((DOMAIN-SUFFIX,tdesktop.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,techcrunch.com,出口选择
+- AND,((DOMAIN-SUFFIX,techcrunch.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,techsmith.com,出口选择
+- AND,((DOMAIN-SUFFIX,techsmith.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,thepiratebay.org,出口选择
+- AND,((DOMAIN-SUFFIX,thepiratebay.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,theverge.com,出口选择
+- AND,((DOMAIN-SUFFIX,theverge.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,time.com,出口选择
+- AND,((DOMAIN-SUFFIX,time.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,timeinc.net,出口选择
+- AND,((DOMAIN-SUFFIX,timeinc.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tiny.cc,出口选择
+- AND,((DOMAIN-SUFFIX,tiny.cc),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tinypic.com,出口选择
+- AND,((DOMAIN-SUFFIX,tinypic.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tmblr.co,出口选择
+- AND,((DOMAIN-SUFFIX,tmblr.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,todoist.com,出口选择
+- AND,((DOMAIN-SUFFIX,todoist.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,trello.com,出口选择
+- AND,((DOMAIN-SUFFIX,trello.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,trustasiassl.com,出口选择
+- AND,((DOMAIN-SUFFIX,trustasiassl.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tumblr.co,出口选择
+- AND,((DOMAIN-SUFFIX,tumblr.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tumblr.com,出口选择
+- AND,((DOMAIN-SUFFIX,tumblr.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tweetdeck.com,出口选择
+- AND,((DOMAIN-SUFFIX,tweetdeck.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,tweetmarker.net,出口选择
+- AND,((DOMAIN-SUFFIX,tweetmarker.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,twitch.tv,出口选择
+- AND,((DOMAIN-SUFFIX,twitch.tv),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,txmblr.com,出口选择
+- AND,((DOMAIN-SUFFIX,txmblr.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,typekit.net,出口选择
+- AND,((DOMAIN-SUFFIX,typekit.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ubertags.com,出口选择
+- AND,((DOMAIN-SUFFIX,ubertags.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ublock.org,出口选择
+- AND,((DOMAIN-SUFFIX,ublock.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ubnt.com,出口选择
+- AND,((DOMAIN-SUFFIX,ubnt.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ulyssesapp.com,出口选择
+- AND,((DOMAIN-SUFFIX,ulyssesapp.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,urchin.com,出口选择
+- AND,((DOMAIN-SUFFIX,urchin.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,usertrust.com,出口选择
+- AND,((DOMAIN-SUFFIX,usertrust.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,v.gd,出口选择
+- AND,((DOMAIN-SUFFIX,v.gd),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,v2ex.com,出口选择
+- AND,((DOMAIN-SUFFIX,v2ex.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,vimeo.com,出口选择
+- AND,((DOMAIN-SUFFIX,vimeo.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,vimeocdn.com,出口选择
+- AND,((DOMAIN-SUFFIX,vimeocdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,vine.co,出口选择
+- AND,((DOMAIN-SUFFIX,vine.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,vivaldi.com,出口选择
+- AND,((DOMAIN-SUFFIX,vivaldi.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,vox-cdn.com,出口选择
+- AND,((DOMAIN-SUFFIX,vox-cdn.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,vsco.co,出口选择
+- AND,((DOMAIN-SUFFIX,vsco.co),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,vultr.com,出口选择
+- AND,((DOMAIN-SUFFIX,vultr.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,w.org,出口选择
+- AND,((DOMAIN-SUFFIX,w.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,w3schools.com,出口选择
+- AND,((DOMAIN-SUFFIX,w3schools.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,webtype.com,出口选择
+- AND,((DOMAIN-SUFFIX,webtype.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wikiwand.com,出口选择
+- AND,((DOMAIN-SUFFIX,wikiwand.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wikileaks.org,出口选择
+- AND,((DOMAIN-SUFFIX,wikileaks.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wikimedia.org,出口选择
+- AND,((DOMAIN-SUFFIX,wikimedia.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wikipedia.com,出口选择
+- AND,((DOMAIN-SUFFIX,wikipedia.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wikipedia.org,出口选择
+- AND,((DOMAIN-SUFFIX,wikipedia.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,windows.com,出口选择
+- AND,((DOMAIN-SUFFIX,windows.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,windows.net,出口选择
+- AND,((DOMAIN-SUFFIX,windows.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wire.com,出口选择
+- AND,((DOMAIN-SUFFIX,wire.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wordpress.com,出口选择
+- AND,((DOMAIN-SUFFIX,wordpress.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,workflowy.com,出口选择
+- AND,((DOMAIN-SUFFIX,workflowy.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wp.com,出口选择
+- AND,((DOMAIN-SUFFIX,wp.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wsj.com,出口选择
+- AND,((DOMAIN-SUFFIX,wsj.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,wsj.net,出口选择
+- AND,((DOMAIN-SUFFIX,wsj.net),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,xda-developers.com,出口选择
+- AND,((DOMAIN-SUFFIX,xda-developers.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,xeeno.com,出口选择
+- AND,((DOMAIN-SUFFIX,xeeno.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,xiti.com,出口选择
+- AND,((DOMAIN-SUFFIX,xiti.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,yahoo.com,出口选择
+- AND,((DOMAIN-SUFFIX,yahoo.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,yimg.com,出口选择
+- AND,((DOMAIN-SUFFIX,yimg.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ying.com,出口选择
+- AND,((DOMAIN-SUFFIX,ying.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,yoyo.org,出口选择
+- AND,((DOMAIN-SUFFIX,yoyo.org),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,ytimg.com,出口选择
+- AND,((DOMAIN-SUFFIX,ytimg.com),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,telegra.ph,出口选择
+- AND,((DOMAIN-SUFFIX,telegra.ph),(NETWORK,UDP)),REJECT
+- DOMAIN-SUFFIX,telegram.org,出口选择
+- AND,((DOMAIN-SUFFIX,telegram.org),(NETWORK,UDP)),REJECT
+- IP-CIDR,91.108.4.0/22,出口选择,no-resolve
+- IP-CIDR,91.108.8.0/21,出口选择,no-resolve
+- IP-CIDR,91.108.16.0/22,出口选择,no-resolve
+- IP-CIDR,91.108.56.0/22,出口选择,no-resolve
+- IP-CIDR,149.154.160.0/20,出口选择,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,出口选择,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,出口选择,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,出口选择,no-resolve
+- IP-CIDR,120.232.181.162/32,出口选择,no-resolve
+- IP-CIDR,120.241.147.226/32,出口选择,no-resolve
+- IP-CIDR,120.253.253.226/32,出口选择,no-resolve
+- IP-CIDR,120.253.255.162/32,出口选择,no-resolve
+- IP-CIDR,120.253.255.34/32,出口选择,no-resolve
+- IP-CIDR,120.253.255.98/32,出口选择,no-resolve
+- IP-CIDR,180.163.150.162/32,出口选择,no-resolve
+- IP-CIDR,180.163.150.34/32,出口选择,no-resolve
+- IP-CIDR,180.163.151.162/32,出口选择,no-resolve
+- IP-CIDR,180.163.151.34/32,出口选择,no-resolve
+- IP-CIDR,203.208.39.0/24,出口选择,no-resolve
+- IP-CIDR,203.208.40.0/24,出口选择,no-resolve
+- IP-CIDR,203.208.41.0/24,出口选择,no-resolve
+- IP-CIDR,203.208.43.0/24,出口选择,no-resolve
+- IP-CIDR,203.208.50.0/24,出口选择,no-resolve
+- IP-CIDR,220.181.174.162/32,出口选择,no-resolve
+- IP-CIDR,220.181.174.226/32,出口选择,no-resolve
+- IP-CIDR,220.181.174.34/32,出口选择,no-resolve
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,DIRECT
+find-process-mode: always
+profile:
+  tracing: true
+  store-selected: false
+  store-fake-ip: true
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack:
+  - any:53
+  auto-route: true
+  auto-detect-interface: true
+sniffer:
+  sniff:
+    TLS:
+      ports:
+      - 443
+      override-destination: true
+    HTTP:
+      ports:
+      - 443
+      override-destination: true
+  enable: true
+  parse-pure-ip: true
+  force-dns-mapping: true
+  override-destination: true
+hosts:
+  www.douyin.com: 155.102.54.136
+  imapi.douyin.com: 98.96.213.145

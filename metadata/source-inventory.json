@@ -1,0 +1,668 @@
+[
+  {
+    "source_file": "Chrome_Douyin_LocalProxy_NetLog.cmd",
+    "bytes": 1946,
+    "source_sha256": "458ced5253f2dfc560d7451a903f956feeb07ff0f4e2c9ac55432c19826b2102",
+    "disposition": "local-only-historical-diagnostic-or-policy"
+  },
+  {
+    "source_file": "Chrome_Douyin_TUN_NetLog.cmd",
+    "bytes": 1933,
+    "source_sha256": "ea74a7ff00be8bf181f20fddb27d4eea3f81869ea8b182ed4ba0151e079a37fc",
+    "disposition": "local-only-historical-diagnostic-or-policy"
+  },
+  {
+    "source_file": "Chrome_FlClash_7890.cmd",
+    "bytes": 3245,
+    "source_sha256": "f38fd4158d2a749ab37e50492d9d72b8d6a2db9e9fff7df1a7c153b28e12552a",
+    "disposition": "copied-reviewed-launcher",
+    "repository_file": "scripts/windows/Chrome_FlClash_7890.cmd"
+  },
+  {
+    "source_file": "Chrome_FlClash_7890_Launcher.ps1",
+    "bytes": 3194,
+    "source_sha256": "3a7d669197569973731470b6e6876b648f97525dc4549aec6b5ee91add9e781a",
+    "disposition": "copied-reviewed-launcher",
+    "repository_file": "scripts/windows/Chrome_FlClash_7890_Launcher.ps1"
+  },
+  {
+    "source_file": "Chrome_FlClash_7890_说明.md",
+    "bytes": 3623,
+    "source_sha256": "2031941843e89297ce3f7ffb242558856b7bcd6b71117ac939e163325a1b3467",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "Chrome_仅撤回Google加密DNS补充策略_2026-10-12.reg",
+    "bytes": 286,
+    "source_sha256": "c69f69d1850c26129172249177d318c97b2ad84a5677133dfdb802b4f61f9ff5",
+    "disposition": "local-only-historical-diagnostic-or-policy"
+  },
+  {
+    "source_file": "Chrome_保留WebRTC限制_启用Google加密DNS_2026-10-12.reg",
+    "bytes": 370,
+    "source_sha256": "e6734ba9d7c9fc474b2752d3911e29dd43af64c6fd809d725b2bf5ba5d697a95",
+    "disposition": "local-only-historical-diagnostic-or-policy"
+  },
+  {
+    "source_file": "Chrome_加密DNS补充策略_使用说明_2026-10-12.txt",
+    "bytes": 1601,
+    "source_sha256": "886e11e377791e9fea6b36c7aab3b9914bffee8a9e5e1342c85e96f22700d388",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "Chrome抖音同入口对照_说明.txt",
+    "bytes": 1972,
+    "source_sha256": "103be34d28883061c5fc3fc3d8c07398b8cda1ed66adfde3a3a35dcc01ba2de3",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "Douyin_Collect_NetLog.cmd",
+    "bytes": 1743,
+    "source_sha256": "e2612ee64b5ad6bab925f636b20165fd47815a4b4a18dc25cb695f03365a0932",
+    "disposition": "local-only-historical-diagnostic-or-policy"
+  },
+  {
+    "source_file": "Douyin_Test_LocalProxy_NetLog.cmd",
+    "bytes": 1933,
+    "source_sha256": "57aeafd160ecb42ed26afd0b6c4d8743ccc430ebd0b46af35e7287f52651cdbd",
+    "disposition": "local-only-historical-diagnostic-or-policy"
+  },
+  {
+    "source_file": "FiClash_宝可梦_住宅抖音连接修正版.yaml",
+    "bytes": 40519,
+    "source_sha256": "5cb60e51465fc9c8793c65c7ca3b46d5f1c613bf0690632e6e70b6830e521128",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/pokemon/FiClash_宝可梦_住宅抖音连接修正版.example.yaml",
+    "status": "withdrawn-do-not-use"
+  },
+  {
+    "source_file": "FiClash_宝可梦_住宅按手机接入版.yaml",
+    "bytes": 35245,
+    "source_sha256": "558bbc360c6102b9ca092db4caa61c60d9d3010aa2b54f63968338c6abcdd393",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/pokemon/FiClash_宝可梦_住宅按手机接入版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FiClash_宝可梦_住宅直连_规则版.yaml",
+    "bytes": 31336,
+    "source_sha256": "33dc3e7671b93dd7850b90aa33575c61ed97575b03af8e7e625a2b08c05329a3",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/pokemon/FiClash_宝可梦_住宅直连_规则版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FiClash_宝可梦_原附件恢复版.yaml",
+    "bytes": 30567,
+    "source_sha256": "0553b38092d2d96bd7ed300db90b1053a4af6151dbc1a2ae2be6393bf4b8c445",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/pokemon/FiClash_宝可梦_原附件恢复版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FiClash_宝可梦_完整分流修正版.yaml",
+    "bytes": 35126,
+    "source_sha256": "5e58396829a102455fdc48d0a4095e033d16792bc60149ab208d04e98ff96762",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/pokemon/FiClash_宝可梦_完整分流修正版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FiClash_宝可梦_恢复绿色基准版.yaml",
+    "bytes": 35400,
+    "source_sha256": "976f3133ffb5ad359c989bb25af0d15bb8cee8735bd100afbb53e224b453ffc8",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/pokemon/FiClash_宝可梦_恢复绿色基准版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FiClash_宝可梦_新附件分流版.yaml",
+    "bytes": 38646,
+    "source_sha256": "8f4d1761c7dc8a712eec4f1bc894629f19cd516680391b4b5cf19607b9c52727",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/pokemon/FiClash_宝可梦_新附件分流版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FiClash_宝可梦_新附件原样备份.yaml",
+    "bytes": 35104,
+    "source_sha256": "92d4b42c5da231c7645a734461ce437fdf5944feb08333898c075a1330428e0f",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/pokemon/FiClash_宝可梦_新附件原样备份.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_2026-10-05_日志结论.md",
+    "bytes": 1657,
+    "source_sha256": "5023dc28345048492b5ab72df51bb7706ce85bb2f67e5835e745c7119b03e8a1",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-08_住宅自动前置_Windows版.yaml",
+    "bytes": 396066,
+    "source_sha256": "a15363c47f7b2a687e433e4c564159783115b7a3a171963827cbd4f1212ed823",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-08_住宅自动前置_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-08_住宅自动前置_安卓版.yaml",
+    "bytes": 395641,
+    "source_sha256": "a0b66318cdceaad085ce9e22fe7b1bd7cf897faf7909797fddb3eec565d489e6",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-08_住宅自动前置_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_Muse实际域名修正版_Windows版.yaml",
+    "bytes": 482315,
+    "source_sha256": "e14010ff7e66cdb5d3272cae741e1cd221cd1fd4c3daa9be6c8775830f069a49",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_Muse实际域名修正版_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_Muse实际域名修正版_安卓版.yaml",
+    "bytes": 481984,
+    "source_sha256": "2d432f9cefc30a577f2c664807d6b6c05f6c1b8e0d2bf5c6aa62a2bbb53bd194",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_Muse实际域名修正版_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_Muse漏分流修正版_Windows版.yaml",
+    "bytes": 482352,
+    "source_sha256": "00bc1d1eac1e466b4746f63795c7bb804e0c4bae727b3d1c39e2763977ca93a4",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_Muse漏分流修正版_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_Muse漏分流修正版_安卓版.yaml",
+    "bytes": 482021,
+    "source_sha256": "d427dbf8ecd87f81221ecb325c3d776b57a02ca7ef2fcb29371c03142d503b53",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_Muse漏分流修正版_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_Muse规则代理_精简版_Windows版.yaml",
+    "bytes": 482159,
+    "source_sha256": "49f173f6db2c47365c63bfeb69c2a2915a991bd135374732ef029fbad6416443",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_Muse规则代理_精简版_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_Muse规则代理_精简版_安卓版.yaml",
+    "bytes": 481828,
+    "source_sha256": "8beb7ff674926b92e223aa05c1b6d16ff5aec2c49111004c0c43a05cc2f3099a",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_Muse规则代理_精简版_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_住宅机场可切换_Muse代理补充_Windows版.yaml",
+    "bytes": 481130,
+    "source_sha256": "1132326e4f21a8ee0cbd54843b618a6ab3fc7b99e14224e4715a41b27119b8d1",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_住宅机场可切换_Muse代理补充_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_住宅机场可切换_Muse代理补充_安卓版.yaml",
+    "bytes": 480959,
+    "source_sha256": "667a8f25656159a8e2934e32f223eb8d11a3b9c89c6d2e8ae60d1abd8185166d",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_住宅机场可切换_Muse代理补充_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_住宅机场可切换_Muse美国自动前置_安卓版.yaml",
+    "bytes": 479926,
+    "source_sha256": "f75746e3e720760ba6e0ccca598c6a7a875196daf0026eba3c96ed7812cf37cd",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_住宅机场可切换_Muse美国自动前置_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_住宅机场可切换_Windows版.yaml",
+    "bytes": 481187,
+    "source_sha256": "c252e9422be2c9fa9fffbe9f7474477ed753d1cfa5078e80456d3de013b8c030",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_住宅机场可切换_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_住宅机场可切换_安卓版.yaml",
+    "bytes": 480746,
+    "source_sha256": "b5c542169e06b60b8464d2a4dcd5da20fdab73c909e9c78d023bb411e9280e9e",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_住宅机场可切换_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_固定住宅出口_前置可见_Windows版.yaml",
+    "bytes": 503970,
+    "source_sha256": "4c1d2a8fdda6a637bc35f192074004fd6d0f9deb62dcf7be0b1a6b94331be79f",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_固定住宅出口_前置可见_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_固定住宅出口_前置可见_安卓版.yaml",
+    "bytes": 503505,
+    "source_sha256": "91f8532e4c0a9ab3b1623c6e8db5e784f0ab3838167035ae9ce97ae3291e672d",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_固定住宅出口_前置可见_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_固定住宅出口_自动前置_Windows版.yaml",
+    "bytes": 504394,
+    "source_sha256": "8c80f20e64b2e62609a43e243b196f8669d50ad378b96ad28aa9291fa9a7e9ab",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_固定住宅出口_自动前置_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-10_固定住宅出口_自动前置_安卓版.yaml",
+    "bytes": 503929,
+    "source_sha256": "777ff500605d1e5831f5f72562269d30bd0cb3edff78a1fea465132de4cc1284",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-10_固定住宅出口_自动前置_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_Windows完整版_抖音兼容.yaml",
+    "bytes": 473400,
+    "source_sha256": "4611602b89c0bc089927ce83be60291f46f67c05c0fb6a37db8680fea5ccf88b",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-12_Windows完整版_抖音兼容.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_Windows抖音_imapi单域名对照_临时V2.yaml",
+    "bytes": 482653,
+    "source_sha256": "fef03aaa53e488df569024bee8bbf4e7c6827c6cadf9c672fd84bb08f55648f4",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-12_Windows抖音_imapi单域名对照_临时V2.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_Windows抖音首页固定IPv4对照_临时.yaml",
+    "bytes": 482615,
+    "source_sha256": "1e87811c1c0c44f84673911edd3c28694e7189bba5a5d32f6c454c0f9b6b42b4",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-12_Windows抖音首页固定IPv4对照_临时.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_安卓版_Chrome防WebRTC直连.yaml",
+    "bytes": 482554,
+    "source_sha256": "1b00b9ceaa5005336dcd5981ac66b17668dea2040fda60e61e1e6305ac79079b",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-12_安卓版_Chrome防WebRTC直连.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_安卓版_Chrome防WebRTC直连_说明.txt",
+    "bytes": 2210,
+    "source_sha256": "4a7544a79cf0f6672ba81dbce87b374505f38f3942074ec6fa439800973fda56",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_安卓版_STUN端口保护_V2.yaml",
+    "bytes": 482540,
+    "source_sha256": "24656ba5c7648f53beda2d09ece7d1eda74d5288b695a0d84f427f2bef23a6de",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-12_安卓版_STUN端口保护_V2.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_安卓版_STUN端口保护_V2_说明.txt",
+    "bytes": 2427,
+    "source_sha256": "734113cd1798cc4bc28f3235bc53b092dbba67d71236ea33463a0153ff076e98",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_规则首次连接优化_Windows版.yaml",
+    "bytes": 482578,
+    "source_sha256": "1f9489a5b9f8501cca12c6d306b5324572ced67f507af7392ac443426ad19a94",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-12_规则首次连接优化_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-12_规则首次连接优化_安卓版.yaml",
+    "bytes": 482353,
+    "source_sha256": "255c647d6d6b7c4a15ee9304d4a93ad5a8f7ba83b33badf525554e148ede65e7",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-12_规则首次连接优化_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-13_Windows完整版_新增LinkStatic纽约.yaml",
+    "bytes": 473962,
+    "source_sha256": "57a193ff8f639ef734cf4557eaf95efe8022ddf12cb3e632fabbe97c1bd71db4",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-13_Windows完整版_新增LinkStatic纽约.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-13_安卓版完整版_新增LinkStatic纽约_STUN保护.yaml",
+    "bytes": 483148,
+    "source_sha256": "6d7922f8ba4494185cdb669c95beedf58b7dc89f68f8347f1e5d4072a541ec13",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-13_安卓版完整版_新增LinkStatic纽约_STUN保护.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-13_安卓版完整版_新增LinkStatic纽约_STUN保护_说明.txt",
+    "bytes": 1163,
+    "source_sha256": "418bff5834363fda3ef5eba3d2fd9f4b477b178c6d07f71ad7d234f59c6f6ea8",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-21_Windows_恢复抖音hosts对照版.yaml",
+    "bytes": 475433,
+    "source_sha256": "e144cc3ad583f9e3fe52eb426b7e610f1b2991c9f1c7d1746cc2fe975b3efd06",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/linkcube/FlClash_LinkCube_2026-10-21_Windows_恢复抖音hosts对照版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-21_Windows_抖音hosts恢复_移除过期纽约.yaml",
+    "bytes": 484445,
+    "source_sha256": "3eaca3ed9615b3b1ad16dfe557d301480cbe59e73455c2756cebbb377f72bcc4",
+    "disposition": "redacted-template",
+    "repository_file": "configs/current/linkcube-windows-baseline.example.yaml",
+    "status": "baseline-structure-offline-validated"
+  },
+  {
+    "source_file": "FlClash_LinkCube_2026-10-21_Windows_直播伴侣分流对照版.yaml",
+    "bytes": 484885,
+    "source_sha256": "d17caa9ab270edf28a9d553e0e81b9174862b38e85b2cf67cfef89429a22cf01",
+    "disposition": "redacted-template",
+    "repository_file": "configs/current/linkcube-windows-streamingtool-candidate.example.yaml",
+    "status": "candidate-network-unverified"
+  },
+  {
+    "source_file": "FlClash_Panda_2026-10-05_域名UDP回落修正版.yaml",
+    "bytes": 24284,
+    "source_sha256": "0126b821c64baa03ca8a71f085c23031ec67883e18ffafc251060c12575524ca",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/panda/FlClash_Panda_2026-10-05_域名UDP回落修正版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_Panda_2026-10-05_抖音业务修正版.yaml",
+    "bytes": 20577,
+    "source_sha256": "eac878bc9c50c26f1b2bcc4b7da287861e01f24665d2fb24dec620f2fa7f32f9",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/panda/FlClash_Panda_2026-10-05_抖音业务修正版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_Panda_TikTok资源代理_安卓版.yaml",
+    "bytes": 19672,
+    "source_sha256": "8306c803c79977b7f7556eade017fb139aa69a79d332e02b2efd95c4953d0730",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/panda/FlClash_Panda_TikTok资源代理_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_Panda_TikTok资源代理_电脑版.yaml",
+    "bytes": 19678,
+    "source_sha256": "fb2329245f3c35bf8932e7ad85a52c733a03181f26642da9aa6a8b45767a58eb",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/panda/FlClash_Panda_TikTok资源代理_电脑版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_Panda_Windows_v0.8.99_住宅_TikTok分流版.yaml",
+    "bytes": 19848,
+    "source_sha256": "7345d4fbfdd5ad5fdecca34a9b38b0b69c464ebe6ceafdf6919a356f36e9f444",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/panda/FlClash_Panda_Windows_v0.8.99_住宅_TikTok分流版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_Panda_住宅经US-07-GIA_分流版.yaml",
+    "bytes": 19654,
+    "source_sha256": "ce07e04438f37cb715868534766fa5894bdc807f9b0ce4bf0a8a19a986658a81",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/panda/FlClash_Panda_住宅经US-07-GIA_分流版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_Panda_安卓住宅_IP检测补全版.yaml",
+    "bytes": 19648,
+    "source_sha256": "196e84f2ced45ede92f0dab8d9c74958d8f7680685fcf1d817018c4d6c7874d7",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/panda/FlClash_Panda_安卓住宅_IP检测补全版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_Panda_安卓住宅经US-07-GIA版.yaml",
+    "bytes": 19478,
+    "source_sha256": "d888016fda47b7b82cc3df92ed4541e63c1b8ffb9c246a7fb1011cc8d5b892b4",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/panda/FlClash_Panda_安卓住宅经US-07-GIA版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-05_域名UDP回落修正版.yaml",
+    "bytes": 56950,
+    "source_sha256": "337750bd07fd2d0f7e6778a2137833713dc7b454ef83f229b736c73c3c1b3b20",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_2026-10-05_域名UDP回落修正版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-05_抖音业务修正版.yaml",
+    "bytes": 39724,
+    "source_sha256": "7b09b68621c03b6293c33fc177b690971a20bbe75b2786ca73deeff29eff25a9",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_2026-10-05_抖音业务修正版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-11_自动中转_Muse修正版_Windows版.yaml",
+    "bytes": 60997,
+    "source_sha256": "3df83202244972dcd8bd276c727ddc2a91ebf56935368fe3d95b9c499e5350f3",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_2026-10-11_自动中转_Muse修正版_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-11_自动中转_Muse修正版_安卓版.yaml",
+    "bytes": 61038,
+    "source_sha256": "ccacceacc362ce53c458b6c21f53fc6f1c337f040a06bb0f0cd869ce3e8e4a7d",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_2026-10-11_自动中转_Muse修正版_安卓版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-12_DNS与首次连接优化_Windows版.yaml",
+    "bytes": 62627,
+    "source_sha256": "f4b4cfbaf3c3eb528f390b4e3665a030ee1714e42ecb386a2b1dd3d7f44d024f",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_2026-10-12_DNS与首次连接优化_Windows版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-12_DNS与首次连接优化_Windows版_说明.txt",
+    "bytes": 2490,
+    "source_sha256": "18cf6182a96f29b68ec78b6a18bae3df4dae3834a94d14f78a00f074865f6f48",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-12_DNS与首次连接优化_安卓版_STUN保护.yaml",
+    "bytes": 63062,
+    "source_sha256": "292cae5727b1dd342ae816e0149c6344adc734e77cd99e539a34aac111a3497b",
+    "disposition": "redacted-template",
+    "repository_file": "configs/current/blizzard-android.example.yaml",
+    "status": "historical-android-baseline"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-12_DNS与首次连接优化_安卓版_STUN保护_说明.txt",
+    "bytes": 2349,
+    "source_sha256": "6b98229983ad0db7b57beb0aa2d753acd4a094b61748e1bc569b280955547126",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-12_Windows完整版_DNS与抖音兼容.yaml",
+    "bytes": 62214,
+    "source_sha256": "6926c23bc07e35d51da8459187f717823d8da4d49e629b7edc259a97a1ded3e7",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_2026-10-12_Windows完整版_DNS与抖音兼容.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-12_Windows完整版_DNS与抖音兼容_说明.txt",
+    "bytes": 1649,
+    "source_sha256": "e726f8ddb67f1a6fe3980594c129ddf8b99e97d2ab04d7cd628d4f05a7e5c336",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "FlClash_吹雪云_2026-10-21_Windows完整校验版_保留自动中转.yaml",
+    "bytes": 61114,
+    "source_sha256": "6f792ff68e5b2a050c3bc3cf688fb341eb47d65832ecafce3d25167afd95a9a1",
+    "disposition": "redacted-template",
+    "repository_file": "configs/current/blizzard-windows.example.yaml",
+    "status": "baseline-structure-offline-validated"
+  },
+  {
+    "source_file": "FlClash_吹雪云_TikTok资源代理_电脑版.yaml",
+    "bytes": 39161,
+    "source_sha256": "030d23f68459de2c4ac22ade1d900b82e3b6281180583e3e973acacb1d1d2308",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_TikTok资源代理_电脑版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_住宅_AI_分流版.yaml",
+    "bytes": 39478,
+    "source_sha256": "295815e870c8cf1278fb604a5976295e69008c905f0043eb306dc5fe5795af85",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_住宅_AI_分流版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_住宅与IP检测分流版.yaml",
+    "bytes": 38931,
+    "source_sha256": "d46edc3703525408d1e3d0e6d23fb8f9c2a36f45b15688cd0c2b577fad4b2e36",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_住宅与IP检测分流版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_住宅分流版.yaml",
+    "bytes": 38401,
+    "source_sha256": "faf6b583c3463010b7dfa06682aa54c34e0df5e2a838c7daac79fa9740aa9820",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_住宅分流版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_住宅经美国接入版.yaml",
+    "bytes": 38584,
+    "source_sha256": "fd318044872a6c61e17a2e09813deddfbf70a04714c549074b86793adf1a3635",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_住宅经美国接入版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_住宅经美国移联01版.yaml",
+    "bytes": 38826,
+    "source_sha256": "5c17683a0bd52786a1956872be647d1124194ff6aa516484a9826c1b620f1435",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_住宅经美国移联01版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_安卓住宅经美国移联01版.yaml",
+    "bytes": 40766,
+    "source_sha256": "df6e7f38fb177ab0fe065e93ef97d367b8a3f6359dfa401d9e10def95960f948",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_安卓住宅经美国移联01版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_安卓导入版.yaml",
+    "bytes": 40766,
+    "source_sha256": "fcd084df53664cb62fdadc9a4a137ff6ff6a31e0457b5a4d7840c914f49c5d44",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_安卓导入版.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash_吹雪云_新机场原始备份.yaml",
+    "bytes": 34734,
+    "source_sha256": "c09c8e9da4753471c7cb5ee585ad5ad03ab6cc0b5fa67c5c8e174b1192926c90",
+    "disposition": "redacted-template",
+    "repository_file": "archive/configs/blizzard/FlClash_吹雪云_新机场原始备份.example.yaml",
+    "status": "historical-not-current"
+  },
+  {
+    "source_file": "FlClash升级后抖音复查_2026-10-21.md",
+    "bytes": 3757,
+    "source_sha256": "dfe6a3057454a39595334106ce43f117bc62a1754d0ad247e8b531ac0cdc6edf",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "住宅手机接入验证.md",
+    "bytes": 4476,
+    "source_sha256": "34c3b091f5e71aea5072799d47407ef4787c12dbae155789df7de135dd59e21c",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "住宅抖音连接修复说明.md",
+    "bytes": 5237,
+    "source_sha256": "c251a30bb89ad8db5e63def7642f1bdf085f023eafc74e0f6d957257df47a576",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "抖音_imapi单域名对照_临时V2_说明.txt",
+    "bytes": 1505,
+    "source_sha256": "9b7a8c03637c4d3476fcb0d22017da628fb93db9b06e5ec48066b0f46cef586b",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "抖音_NetLog分析与本地代理对照_2026-10-12.md",
+    "bytes": 14706,
+    "source_sha256": "82c03df050fbadb86dce1c331c42767d560d52c5a0dd9012811d443639ae7f54",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "抖音客户端网络日志_使用说明.txt",
+    "bytes": 2334,
+    "source_sha256": "44b7470aa5ae66d68d3627369d37759e5ac24f68ac1f997af942e4cb27e10e9f",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "抖音慢速与媒体分流核对_2026-10-12.md",
+    "bytes": 3926,
+    "source_sha256": "833f42f171dc9f808a2167f0ef4088b58a5ff7ef91cc5fd1a72f5a846a085cd9",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "本次网站修复说明.md",
+    "bytes": 4067,
+    "source_sha256": "bd173c3a1997029fbbcd61b81a793908c327096b135237349ec2258e9641fd6c",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "直播伴侣官网与下载复查_2026-10-21.md",
+    "bytes": 3361,
+    "source_sha256": "c842e7731b1536f2bb9cb8b80c2f08b34dd5ee506c861f4cb3b30e922a7a5a15",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "联网验证报告.md",
+    "bytes": 7100,
+    "source_sha256": "ad10fac1d7a7955da2ccb37bb24fbc0914ce5599bb1c5a47e731028734e3283a",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  }
+]
