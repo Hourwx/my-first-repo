@@ -13,23 +13,29 @@
   },
   {
     "source_file": "Chrome_FlClash_7890.cmd",
-    "bytes": 3245,
-    "source_sha256": "f38fd4158d2a749ab37e50492d9d72b8d6a2db9e9fff7df1a7c153b28e12552a",
+    "bytes": 3241,
+    "source_sha256": "2e28f5461c655d3af500016d620e92e8a388f5dcd38a4fbb59db5f09a9f0f47c",
     "disposition": "copied-reviewed-launcher",
-    "repository_file": "scripts/windows/Chrome_FlClash_7890.cmd"
+    "repository_file": "scripts/windows/Chrome_FlClash_7890.cmd",
+    "source_sha256_at_initial_20261023": "f38fd4158d2a749ab37e50492d9d72b8d6a2db9e9fff7df1a7c153b28e12552a",
+    "updated_on": "2026-10-25"
   },
   {
     "source_file": "Chrome_FlClash_7890_Launcher.ps1",
-    "bytes": 3194,
-    "source_sha256": "3a7d669197569973731470b6e6876b648f97525dc4549aec6b5ee91add9e781a",
+    "bytes": 3190,
+    "source_sha256": "ffd9bce7fbdbc52b0663aaf482b2c17cdd09e8c5d1600e8ab2e5495419da727f",
     "disposition": "copied-reviewed-launcher",
-    "repository_file": "scripts/windows/Chrome_FlClash_7890_Launcher.ps1"
+    "repository_file": "scripts/windows/Chrome_FlClash_7890_Launcher.ps1",
+    "source_sha256_at_initial_20261023": "3a7d669197569973731470b6e6876b648f97525dc4549aec6b5ee91add9e781a",
+    "updated_on": "2026-10-25"
   },
   {
     "source_file": "Chrome_FlClash_7890_说明.md",
-    "bytes": 3623,
-    "source_sha256": "2031941843e89297ce3f7ffb242558856b7bcd6b71117ac939e163325a1b3467",
-    "disposition": "summarized-in-curated-docs-original-remains-local"
+    "bytes": 4111,
+    "source_sha256": "5540baed3938666d0b5b2458f29fa4037ea5d373e13b83bfb6324e38f63416be",
+    "disposition": "summarized-in-curated-docs-original-remains-local",
+    "source_sha256_at_initial_20261023": "2031941843e89297ce3f7ffb242558856b7bcd6b71117ac939e163325a1b3467",
+    "updated_on": "2026-10-25"
   },
   {
     "source_file": "Chrome_仅撤回Google加密DNS补充策略_2026-10-12.reg",
@@ -612,6 +618,13 @@
     "disposition": "summarized-in-curated-docs-original-remains-local"
   },
   {
+    "source_file": "PING0环境检测复查_2026-10-25.md",
+    "bytes": 7629,
+    "source_sha256": "2479d675c20d4e76c42cd3ae0a09b8cbd5a7fbfc080c676a3bf12e3ca9244a54",
+    "added_to_index_on": "2026-10-25",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
     "source_file": "住宅手机接入验证.md",
     "bytes": 4476,
     "source_sha256": "34c3b091f5e71aea5072799d47407ef4787c12dbae155789df7de135dd59e21c",
@@ -624,15 +637,15 @@
     "disposition": "summarized-in-curated-docs-original-remains-local"
   },
   {
-    "source_file": "抖音_imapi单域名对照_临时V2_说明.txt",
-    "bytes": 1505,
-    "source_sha256": "9b7a8c03637c4d3476fcb0d22017da628fb93db9b06e5ec48066b0f46cef586b",
-    "disposition": "summarized-in-curated-docs-original-remains-local"
-  },
-  {
     "source_file": "抖音_NetLog分析与本地代理对照_2026-10-12.md",
     "bytes": 14706,
     "source_sha256": "82c03df050fbadb86dce1c331c42767d560d52c5a0dd9012811d443639ae7f54",
+    "disposition": "summarized-in-curated-docs-original-remains-local"
+  },
+  {
+    "source_file": "抖音_imapi单域名对照_临时V2_说明.txt",
+    "bytes": 1505,
+    "source_sha256": "9b7a8c03637c4d3476fcb0d22017da628fb93db9b06e5ec48066b0f46cef586b",
     "disposition": "summarized-in-curated-docs-original-remains-local"
   },
   {

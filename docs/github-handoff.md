@@ -11,3 +11,10 @@
 AGENTS.md 是持续的仓库约定；current-state.md 是带日期的事实；BOOTSTRAP_PROMPT.md 是每次任务的入口，三者分开维护。官方依据：[AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)、[云端环境](https://learn.chatgpt.com/docs/environments/cloud-environment)。
 
 云端源码不会自动变成本机已导入的 FlClash 配置。后续修改模板时，保持明确的版本差异；真实节点参数应在本地受控地合并后再验证，不能把仓库模板直接当订阅运行。
+
+
+## 从 10-23 包升级到 10-25
+
+已上传旧仓库时，使用补充 ZIP 的改动清单合并同名文件，优先更新两份启动器、docs/chrome-launcher.md、docs/current-state.md、10-25 专题及 AGENTS.md；不要删除或覆盖云端新增的工作。变更说明见 [本次更新](../UPDATE_2026-10-25.md)。尚未上传时，可直接采用完整 10-25 ZIP。
+
+10-25 补充已合并到上述仓库 main 分支；上传范围和验证见 [云端导入记录](cloud-import.md)。本地桌面快捷方式不会通过 GitHub 自动同步，云端也不能操作用户电脑桌面。

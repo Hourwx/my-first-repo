@@ -1,14 +1,13 @@
 {
-  "prepared_on": "2026-10-23",
-  "last_network_evidence_date": "2026-10-21",
-  "source_top_level_file_count": 90,
+  "prepared_on": "2026-10-25",
+  "last_network_evidence_date": "2026-10-25",
+  "source_top_level_file_count": 91,
   "source_yaml_count": 62,
   "template_count": 63,
   "current_template_count": 5,
   "original_files_modified": false,
   "live_profile_modified": false,
-  "network_checks_performed": false,
-  "github_upload_performed": false,
+  "github_upload_performed": true,
   "redacted_endpoint_count": 42,
   "exact_source_secret_scan_passed": true,
   "repository_check": {
@@ -21,8 +20,32 @@
   "checker_regression_cases": {
     "valid": 1,
     "invalid": 5,
-    "passed": true
+    "passed": true,
+    "tested_on": "2026-10-23",
+    "checker_unchanged": true
   },
   "original_source_hashes_unchanged": true,
-  "template_hashes_verified": true
+  "template_hashes_verified": true,
+  "based_on_package": "2026-10-23",
+  "initial_source_top_level_file_count": 90,
+  "source_files_modified_during_this_packaging": false,
+  "network_checks_performed_during_this_packaging": false,
+  "network_evidence_source": "user screenshots and earlier read-only metadata checks",
+  "yaml_templates_unchanged_from_20261023": true,
+  "launcher_change_scope": "homeUrl only: ChatGPT -> chrome://newtab/",
+  "new_default_page_e2e_launch_tested": false,
+  "desktop_shortcut_changes_completed_locally": true,
+  "system_tun_ipv6_fixed": false,
+  "original_source_hashes_unchanged_scope": "packaging reads latest source files; initial hashes retained for previously updated launcher/docs",
+  "exact_source_secret_scan_rerun_on": "2026-10-25",
+  "github_update": {
+    "date": "2026-10-25",
+    "repository": "Hourwx/my-first-repo",
+    "branch": "main",
+    "base_commit": "7d1f0ec9f6b14542df6c55bfa289d476656e95d5",
+    "changed_paths": 18,
+    "yaml_templates_unchanged_from_remote": true,
+    "existing_cloud_edits_preserved": true,
+    "validation_scope": "offline checks and exact local source secret/endpoint scan; no live proxy tests"
+  }
 }

@@ -1,7 +1,7 @@
 ﻿param([switch]$CheckOnly);
 
 $ErrorActionPreference = 'Stop';
-$homeUrl = 'https://chatgpt.com/';
+$homeUrl = 'chrome://newtab/';
 
 function Get-ChromeLaunchMode {
     param([object[]]$Processes);

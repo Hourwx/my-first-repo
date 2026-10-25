@@ -23,3 +23,13 @@ README 和 GitHub 交接说明补充实际目标仓库。metadata/validation-rep
 云端使用 requirements.txt 指定的 PyYAML 6.0.3 运行 `python tools/check_repository.py`，检查模板结构、已知敏感字段的占位符、配置目录和文档链接。原始真实配置没有上传到云端，因此不能在这里重新执行针对原始账号的精确比对。
 
 本次不运行 Windows 启动脚本或代理核心，不更改真实 FlClash 配置，不测试用户本机连通性。streamingtool 对照模板仍待用户本地验证，离线通过不表示故障已修复。
+
+## 2026-10-25 补充导入
+
+用户明确授权将本地 10-25 脱敏补充合并到本仓库 main 分支。基于导入前提交 `7d1f0ec9f6b14542df6c55bfa289d476656e95d5`，保留已有 README 目标仓库说明、本文历史记录、隐私说明、.gitattributes 换行规范及模板校验元数据。
+
+本次合并 17 个补充文件，并更新本导入记录，共 18 个路径。没有删除远端文件，63 份 YAML 模板与导入前版本逐字相同；真实账号、代理端点、原始日志、截图和桌面 LNK 均不提交。启动器默认目标改为 chrome://newtab/，保留显式 7890 代理、禁用 QUIC、原资料和实例检查；没有在上传过程中执行启动器。
+
+本地离线结构检查及已知源凭据/端点精确扫描通过。校验清单覆盖本次合并后的工作树，排除 .git、缓存和清单本身；Windows 脚本工作树仍为 CRLF，Git 对象按 .gitattributes 规范化为 LF。metadata/templates.json 保留先前云端换行归一化后的模板摘要。
+
+metadata/validation-report.json 的原资料包检查结论保留；github_upload_performed 更新为本次提交的上传状态，github_update 记录本次合并基线与离线检查范围。metadata/update-2026-10-25.json 记录实际合并路径。本次没有改动用户本机 FlClash 配置或重新做网络探针；系统 TUN IPv6 与直播伴侣完整下载仍待分别验证。
